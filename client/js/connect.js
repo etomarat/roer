@@ -6,7 +6,7 @@ var left, right = false;
 var players = [left, right];
 
 var playersReady = function(){
-  return _.indexOf(players, false) === -1 ? true : false;
+  return Boolean(_.indexOf(players, false) === -1);
 };
 
 var socketOnMessage = function(e) {
@@ -21,7 +21,11 @@ var socketOnMessage = function(e) {
   
   if (playersReady()) {
     alert('Оба готовы');
+    window.showTimer();
+    window.timerStep();
   }
+  
+  window.renderLogged(players);
   
   console.log(e.data, JSON.parse(e.data));
 };

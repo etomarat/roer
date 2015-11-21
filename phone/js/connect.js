@@ -45,9 +45,9 @@ var socketOnClose = function(event) {
   if (event.wasClean) {
     alert('Соединение закрыто чисто');
   } else {
-    alert('Обрыв соединения. Код: ' + event.code); // например, "убит" процесс сервера
+//    alert('Обрыв соединения. Код: ' + event.code); // например, "убит" процесс сервера
   }
-  window.location.reload();
+//  window.location.reload();
 };
 
 var createSocket = function() {

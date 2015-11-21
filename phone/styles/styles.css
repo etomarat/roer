@@ -92,19 +92,18 @@ main {
           width: 300px;
           height: 300px;
           display: inline-block;
-          opacity: 0.7;
-          cursor: pointer; }
-          /* line 68, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          opacity: 0.7; }
+          /* line 67, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
           main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged {
             opacity: 1; }
-        /* line 73, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 72, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-1 {
           background-color: cadetblue; }
-        /* line 77, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 76, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-2 {
           margin-left: 50px;
           background-color: darkcyan; }
-    /* line 84, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 83, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .popup .timer {
       position: absolute;
       height: 100%;
@@ -114,20 +113,20 @@ main {
       background: #000;
       color: #fff;
       font-size: 100px; }
-      /* line 94, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 93, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .timer.hidden {
         display: none; }
-      /* line 98, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 97, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .timer h1 {
         font-size: 150px; }
-  /* line 108, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 107, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
   main .screen {
     height: 768px;
     width: 1024px;
     position: relative;
     background-color: magenta;
     overflow: hidden; }
-    /* line 115, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 114, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .crack-bar {
       width: 300px;
       height: 10px;
@@ -139,7 +138,7 @@ main {
       border-radius: 21px;
       box-shadow: 0 0 0 2px #fff;
       padding: 10px; }
-      /* line 127, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 126, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar:before {
         content: '';
         position: absolute;
@@ -152,7 +151,7 @@ main {
         left: -30px;
         box-sizing: border-box;
         z-index: 2; }
-      /* line 141, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 140, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
@@ -160,14 +159,14 @@ main {
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 149, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 148, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
           background-color: fuchsia;
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
-    /* line 159, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 158, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
       width: 70px;
@@ -177,7 +176,7 @@ main {
       border-radius: 36px;
       background-color: #fff;
       box-shadow: 0 0 0 2px; }
-      /* line 169, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 168, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
         width: 60px;
         height: 6px;
@@ -191,7 +190,7 @@ main {
         background: linear-gradient(to right, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#2923dd',GradientType=1 );
         animation: compas 1s linear infinite; }
-    /* line 186, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 185, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 256px;
       height: 256px;

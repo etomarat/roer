@@ -117,8 +117,9 @@ main {
             width: 322px;
             height: 29px;
             position: absolute;
-            left: 50%;
-            margin-left: -150px;
+//            left: 50%;
+//            margin-left: -150px;
+            left: 50px;
             top: 30px;
             
             .eye {
@@ -162,28 +163,38 @@ main {
         
         .compas {
             position: absolute;
-            width: 70px;
-            height: 70px;
+            width: 95px;
+            height: 83px;
             top: 20px;
             right: 20px;
             border-radius: 36px;
-            background-color: #fff;
-            box-shadow: 0 0 0 2px;
+            background-image: url('../img/compas.png');
             
             .arrow {
-                width: 60px;
-                height: 6px;
-                background: #000;
+                width: 34px;
+                height: 46px;
                 position: absolute;
-                top: 32px;
-                left: 5px;
-                background: #ff3236;
-                background: -moz-linear-gradient(left, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
-                background: -webkit-linear-gradient(left, #ff3236 0%,#ff3033 50%,#2923dd 51%,#2923dd 100%);
-                background: linear-gradient(to right, #ff3236 0%,#ff3033 50%,#2923dd 51%,#2923dd 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#2923dd',GradientType=1 );
-                
+                top: 20px;
+                left: 35px;
+                background-image: url('../img/compas_arrow.png');
                 animation: compas 1s linear infinite;
+            }
+        }
+      
+        .ship-zone {
+            position: absolute;
+            bottom: 200px;
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+            text-align: center;
+            
+            .ship {
+                display: inline-block;
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background-color: #fff;
             }
         }
         
@@ -191,7 +202,7 @@ main {
             width: 395px;
             height: 397px;
             position: absolute;
-            bottom: -169px;
+            bottom: -210px;
             left: 50%;
             margin-left: -198px;
             background-image: url(../img/helm.png);

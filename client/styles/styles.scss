@@ -33,6 +33,7 @@ main {
         linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), 
         #444;
         background-size: 16px 48px;
+        display: none;
         
         .popup-message {
             overflow: hidden;
@@ -184,17 +185,16 @@ main {
         }
         
         .helm {
-            width: 256px;
-            height: 256px;
-            border-radius: 125px;
+            width: 395px;
+            height: 397px;
+//            border-radius: 125px;
             position: absolute;
-            bottom: -124px;
+            bottom: -169px;
             left: 50%;
-            margin-left: -124px;
-            
-            background-image: url(./img/helm.png)
-            
+            margin-left: -198px;
+            background-image: url(../img/helm.png);
             animation: helm 5s linear infinite;
+            background-repeat: no-repeat;
         }
     }
 }

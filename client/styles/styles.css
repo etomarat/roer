@@ -133,10 +133,9 @@ main {
       width: 322px;
       height: 29px;
       position: absolute;
-      left: 50%;
-      margin-left: -150px;
+      left: 50px;
       top: 30px; }
-      /* line 124, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 125, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .eye {
         content: '';
         position: absolute;
@@ -148,14 +147,14 @@ main {
         left: -30px;
         box-sizing: border-box;
         z-index: 5; }
-      /* line 137, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 138, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 144, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 145, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status:before {
           content: '';
           width: 100%;
@@ -163,14 +162,14 @@ main {
           background-image: url(../img/progres_frame.png);
           position: absolute;
           z-index: 9; }
-        /* line 153, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 154, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
           background-image: url(../img/progres.png);
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
-    /* line 163, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 164, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
       width: 95px;
@@ -179,7 +178,7 @@ main {
       right: 20px;
       border-radius: 36px;
       background-image: url("../img/compas.png"); }
-      /* line 172, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 173, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
         width: 34px;
         height: 46px;
@@ -189,11 +188,26 @@ main {
         background-image: url("../img/compas_arrow.png");
         animation: compas 1s linear infinite; }
     /* line 184, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    main .screen .ship-zone {
+      position: absolute;
+      bottom: 200px;
+      width: 100%;
+      height: 100px;
+      background-color: #000;
+      text-align: center; }
+      /* line 192, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      main .screen .ship-zone .ship {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: #fff; }
+    /* line 201, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 395px;
       height: 397px;
       position: absolute;
-      bottom: -169px;
+      bottom: -210px;
       left: 50%;
       margin-left: -198px;
       background-image: url(../img/helm.png);

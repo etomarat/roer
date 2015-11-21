@@ -2,8 +2,9 @@
 
 window.renderLogged = function(players){
   players.forEach(function(v, i){
+    console.log(v, i);
     if (v) {
-      $('.popup .players-row > *').eq(i).removeClass('logged');
+      $('.popup .players-row > *').eq(i).addClass('logged');
     }
   });
 };

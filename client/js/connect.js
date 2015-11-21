@@ -2,20 +2,20 @@
 
 var socket;
 var desctop_socket_url = window.socket_url+ 'desktop/';
-var left, right = false;
-var players = [left, right];
+var left = false;
+var right = false;
 
 var playersReady = function(){
-  return Boolean(_.indexOf(players, false) === -1);
+  return Boolean(_.indexOf([left, right], false) === -1);
 };
 
 var socketOnMessage = function(e) {
   var message = JSON.parse(e.data);
   
-  if (message.player == 'left') {
+  if (message.player === 'left') {
     left = true;
   }
-  if (message.player == 'right') {
+  if (message.player === 'right') {
     right = true;
   }
   
@@ -25,7 +25,8 @@ var socketOnMessage = function(e) {
     window.timerStep();
   }
   
-  window.renderLogged(players);
+    window.renderLogged([left, right]);
+  
   
   console.log(e.data, JSON.parse(e.data));
 };
@@ -33,6 +34,7 @@ var socketOnMessage = function(e) {
 var socketOnMessageInit = function (e) {
   socket.onmessage = socketOnMessage;
   console.log('http://screenshake.xyz/ Номер комнаты: '+e.data);
+  alert('http://screenshake.xyz/ Номер комнаты: '+e.data);
 };
 
 var createSocket = function() {

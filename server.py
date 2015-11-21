@@ -7,7 +7,7 @@ def test(HandlerClass=SimpleHTTPRequestHandler,
          ServerClass=BaseHTTPServer.HTTPServer):
 
     protocol = "HTTP/1.0"
-    host = ''
+    host = '0.0.0.0'
     port = 8000
     if len(sys.argv) > 1:
         arg = sys.argv[1]

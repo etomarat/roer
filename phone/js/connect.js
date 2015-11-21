@@ -2,7 +2,6 @@
 /*jshint multistr: true */
 
 var socket;
-var phone_socket_url = window.socket_url + window.playerSide + '/';
 
 var socketOnOpen = function() {
 
@@ -20,13 +19,13 @@ var socketOnOpen = function() {
     var xGPosition = Math.atan2(aGY, aGZ);
     var yGPosition = Math.atan2(aGX, aGZ);
 
-    $('body .info').html('\
+    /*$('body .info').html('\
       aX:'+aGX+'<br>\
       aY:'+aGY+'<br>\
       aZ:'+aGZ+'<br>\
       xPosition:'+xGPosition+'<br>\
       yPosition:'+yGPosition+'<br>\
-    ');
+    ');*/
 
     var data = {
       aGX: parseFloat(aGX.toFixed(3)),
@@ -45,18 +44,19 @@ var socketOnClose = function(event) {
   if (event.wasClean) {
     alert('Соединение закрыто чисто');
   } else {
-//    alert('Обрыв соединения. Код: ' + event.code); // например, "убит" процесс сервера
+    console.log('Обрыв соединения. Код: ' + event.code); // например, "убит" процесс сервера
   }
 //  window.location.reload();
 };
 
-var createSocket = function() {
-  socket = new WebSocket(phone_socket_url);
+window.createSocket = function(roomId) {
+  var phone_socket_url = window.socket_url + window.playerSide + '/' + roomId + '/';
   
+  socket = new WebSocket(phone_socket_url);  
   socket.onclose = socketOnClose;
   socket.onopen = socketOnOpen;
 };
 
 $(document).ready(function(){
-  createSocket();
+  //createSocket();
 });

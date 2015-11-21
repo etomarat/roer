@@ -87,7 +87,7 @@ def main():
         # (r'/(?P<key>\d*)/', Phone),
         (r'/desktop/', Desktop),
         ])
-    application.listen(port)
+    application.listen(port, address='0.0.0.0')
     print(' -- Start server on localhost:{} -- '.format(port))
     try:
         tornado.ioloop.IOLoop.instance().start()

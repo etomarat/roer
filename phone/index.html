@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>PERDISTE!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/shake.css">
     <link href="http://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet" type="text/css">
@@ -18,15 +19,21 @@
         
         <div class="popup">
             <div class="popup-message">
-                <h1>Выберити сторону:</h1>
+                <h1>Selecteer de arm:</h1>
                 
                 <div class="players-row">
-                    <div class="player player-1" data-player="left">пидор слева</div>
-                    <div class="player player-2" data-player="right">пидор справа</div>
+                    <div class="player player-1" data-player="left">
+                      <div class="avatar"></div> 
+                      <span>Linkerhand</span>
+                    </div>
+                    <div class="player player-2" data-player="right">
+                      <div class="avatar"></div> 
+                      <span>Rechterhand</span>
+                    </div>
                 </div>
                 
                 <div class="timer hidden">
-                    <h1>Запуск через ...</h1>
+                    <h1>Zwem door ...</h1>
                     <div class="countdown">00:59:<span>05</span></div>
                 </div>
             </div>

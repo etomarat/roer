@@ -64,8 +64,9 @@ main {
     left: 0;
     z-index: 100;
     background: linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #999 78%), linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), #444;
-    background-size: 16px 48px; }
-    /* line 37, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    background-size: 16px 48px;
+    display: none; }
+    /* line 38, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .popup .popup-message {
       overflow: hidden;
       height: 768px;
@@ -74,37 +75,37 @@ main {
       background-color: magenta;
       overflow: hidden;
       text-align: center; }
-      /* line 46, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 47, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .popup-message h1 {
         color: #fff;
         font-size: 50px;
         margin: 100px 0 30px 0; }
-      /* line 52, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 53, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .popup-message .short-link {
         font-size: 40px;
         text-align: center; }
-      /* line 57, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 58, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .popup-message .players-row {
         height: 300px;
         margin-top: 100px; }
-        /* line 61, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 62, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2 {
           width: 300px;
           height: 300px;
           display: inline-block;
           opacity: 0.7;
           cursor: pointer; }
-          /* line 68, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          /* line 69, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
           main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged {
             opacity: 1; }
-        /* line 73, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 74, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-1 {
           background-color: cadetblue; }
-        /* line 77, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 78, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-2 {
           margin-left: 50px;
           background-color: darkcyan; }
-    /* line 84, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 85, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .popup .timer {
       position: absolute;
       height: 100%;
@@ -114,60 +115,62 @@ main {
       background: #000;
       color: #fff;
       font-size: 100px; }
-      /* line 94, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 95, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .timer.hidden {
         display: none; }
-      /* line 98, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 99, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .timer h1 {
         font-size: 150px; }
-  /* line 108, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 109, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
   main .screen {
     height: 768px;
     width: 1024px;
     position: relative;
     background-color: magenta;
     overflow: hidden; }
-    /* line 115, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 116, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .crack-bar {
-      width: 300px;
-      height: 10px;
+      width: 322px;
+      height: 29px;
       position: absolute;
       left: 50%;
       margin-left: -150px;
-      top: 30px;
-      background-color: darkmagenta;
-      border-radius: 21px;
-      box-shadow: 0 0 0 2px #fff;
-      padding: 10px; }
-      /* line 127, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .screen .crack-bar:before {
+      top: 30px; }
+      /* line 124, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      main .screen .crack-bar .eye {
         content: '';
         position: absolute;
         width: 50px;
         height: 50px;
-        box-shadow: 0 0 0 2px #fff;
-        background-color: darkmagenta;
+        background-image: url(../img/eye.png);
         border-radius: 26px;
-        top: -10px;
+        top: -12px;
         left: -30px;
         box-sizing: border-box;
-        z-index: 2; }
-      /* line 141, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        z-index: 5; }
+      /* line 137, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
-        background-color: #fff;
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 149, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 144, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        main .screen .crack-bar .status:before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-image: url(../img/progres_frame.png);
+          position: absolute;
+          z-index: 9; }
+        /* line 153, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
-          background-color: fuchsia;
+          background-image: url(../img/progres.png);
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
-    /* line 159, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 163, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
       width: 70px;
@@ -177,7 +180,7 @@ main {
       border-radius: 36px;
       background-color: #fff;
       box-shadow: 0 0 0 2px; }
-      /* line 169, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 173, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
         width: 60px;
         height: 6px;
@@ -191,18 +194,16 @@ main {
         background: linear-gradient(to right, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#2923dd',GradientType=1 );
         animation: compas 1s linear infinite; }
-    /* line 186, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 190, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .helm {
-      width: 256px;
-      height: 256px;
-      border-radius: 125px;
+      width: 395px;
+      height: 397px;
       position: absolute;
-      bottom: -124px;
+      bottom: -169px;
       left: 50%;
-      margin-left: -124px;
-      background: radial-gradient(#8a0000 4%, #5c0000 9%, rgba(102, 0, 0, 0) 9%) 0 0, radial-gradient(#8a0000 4%, #5c0000 8%, rgba(102, 0, 0, 0) 10%) 50px 50px, radial-gradient(rgba(153, 0, 0, 0.8) 20%, rgba(102, 0, 0, 0)) 50px 0, radial-gradient(rgba(153, 0, 0, 0.8) 20%, rgba(102, 0, 0, 0)) 0 50px, radial-gradient(#660000 35%, rgba(102, 0, 0, 0) 60%) 50px 0, radial-gradient(#660000 35%, rgba(102, 0, 0, 0) 60%) 100px 50px, radial-gradient(rgba(77, 0, 0, 0.7), rgba(102, 0, 0, 0)) 0 0, radial-gradient(rgba(77, 0, 0, 0.7), rgba(102, 0, 0, 0)) 50px 50px, linear-gradient(45deg, rgba(102, 0, 0, 0) 49%, black 50%, rgba(102, 0, 0, 0) 70%) 0 0, linear-gradient(-45deg, rgba(102, 0, 0, 0) 49%, black 50%, rgba(102, 0, 0, 0) 70%) 0 0;
-      background-color: #300;
-      background-size: 100px 100px;
-      animation: helm 5s linear infinite; }
+      margin-left: -198px;
+      background-image: url(../img/helm.png);
+      animation: helm 5s linear infinite;
+      background-repeat: no-repeat; }
 
 /*# sourceMappingURL=styles.css.map */

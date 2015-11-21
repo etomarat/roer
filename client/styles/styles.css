@@ -173,28 +173,22 @@ main {
     /* line 163, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
-      width: 70px;
-      height: 70px;
+      width: 95px;
+      height: 83px;
       top: 20px;
       right: 20px;
       border-radius: 36px;
-      background-color: #fff;
-      box-shadow: 0 0 0 2px; }
-      /* line 173, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      background-image: url("../img/compas.png"); }
+      /* line 172, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
-        width: 60px;
-        height: 6px;
-        background: #000;
+        width: 34px;
+        height: 46px;
         position: absolute;
-        top: 32px;
-        left: 5px;
-        background: #ff3236;
-        background: -moz-linear-gradient(left, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
-        background: -webkit-linear-gradient(left, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
-        background: linear-gradient(to right, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#2923dd',GradientType=1 );
+        top: 20px;
+        left: 35px;
+        background-image: url("../img/compas_arrow.png");
         animation: compas 1s linear infinite; }
-    /* line 190, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 184, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 395px;
       height: 397px;

@@ -1,3 +1,5 @@
+@import "_animation";
+
 body {
     padding: 0;
     margin: 0;
@@ -19,6 +21,7 @@ main {
         width: 1024px;
         position: relative;
         background-color: magenta;
+        overflow: hidden;
         
         .crack-bar {
             width: 300px;
@@ -26,7 +29,7 @@ main {
             position: absolute;
             left: 50%;
             margin-left: -150px;
-            top: 50px;
+            top: 30px;
             background-color: darkmagenta;
             border-radius: 21px;
             box-shadow: 0 0 0 2px #fff;
@@ -59,8 +62,62 @@ main {
                     background-color: fuchsia;
                     height: 100%;
                     position: relative;
+                    animation: crack 10s linear infinite;
                 }
             }
+        }
+        
+        .compas {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 20px;
+            right: 20px;
+            border-radius: 36px;
+            background-color: #fff;
+            box-shadow: 0 0 0 2px;
+            
+            .arrow {
+                width: 60px;
+                height: 6px;
+                background: #000;
+                position: absolute;
+                top: 32px;
+                left: 5px;
+                background: #ff3236;
+                background: -moz-linear-gradient(left, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
+                background: -webkit-linear-gradient(left, #ff3236 0%,#ff3033 50%,#2923dd 51%,#2923dd 100%);
+                background: linear-gradient(to right, #ff3236 0%,#ff3033 50%,#2923dd 51%,#2923dd 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#2923dd',GradientType=1 );
+                
+                animation: compas 1s linear infinite;
+            }
+        }
+        
+        .helm {
+            width: 256px;
+            height: 256px;
+            border-radius: 125px;
+            position: absolute;
+            bottom: -124px;
+            left: 50%;
+            margin-left: -124px;
+            
+            background:
+            radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+            radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+            radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+            radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+            radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+            radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+            radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+            radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+            linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+            linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+            background-color: #300; 
+            background-size: 100px 100px;
+            
+            animation: helm 5s linear infinite;
         }
     }
 }

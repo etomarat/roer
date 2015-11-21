@@ -1,9 +1,47 @@
-/* line 1, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+@keyframes compas {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes crack {
+  0% {
+    width: 25%; }
+  10% {
+    width: 95%; }
+  20% {
+    width: 15%; }
+  30% {
+    width: 40%; }
+  40% {
+    width: 25%; }
+  50% {
+    width: 70%; }
+  60% {
+    width: 45%; }
+  70% {
+    width: 90%; }
+  80% {
+    width: 50%; }
+  90% {
+    width: 25%; }
+  100% {
+    width: 25%; } }
+
+@keyframes helm {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(-180deg); } }
+
+/* line 3, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
 body {
   padding: 0;
   margin: 0; }
 
-/* line 6, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 8, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
 main {
   display: flex;
   justify-content: center;
@@ -13,26 +51,27 @@ main {
   width: 100%;
   height: 100%;
   background-color: cyan; }
-  /* line 16, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 18, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
   main .screen {
     overflow: auto;
     height: 768px;
     width: 1024px;
     position: relative;
-    background-color: magenta; }
-    /* line 23, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    background-color: magenta;
+    overflow: hidden; }
+    /* line 26, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .crack-bar {
       width: 300px;
       height: 10px;
       position: absolute;
       left: 50%;
       margin-left: -150px;
-      top: 50px;
+      top: 30px;
       background-color: darkmagenta;
       border-radius: 21px;
       box-shadow: 0 0 0 2px #fff;
       padding: 10px; }
-      /* line 35, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 38, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar:before {
         content: '';
         position: absolute;
@@ -45,7 +84,7 @@ main {
         left: -30px;
         box-sizing: border-box;
         z-index: 2; }
-      /* line 49, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 52, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
@@ -53,11 +92,49 @@ main {
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 57, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 60, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
           background-color: fuchsia;
           height: 100%;
-          position: relative; }
+          position: relative;
+          animation: crack 10s linear infinite; }
+    /* line 70, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    main .screen .compas {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      top: 20px;
+      right: 20px;
+      border-radius: 36px;
+      background-color: #fff;
+      box-shadow: 0 0 0 2px; }
+      /* line 80, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      main .screen .compas .arrow {
+        width: 60px;
+        height: 6px;
+        background: #000;
+        position: absolute;
+        top: 32px;
+        left: 5px;
+        background: #ff3236;
+        background: -moz-linear-gradient(left, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
+        background: -webkit-linear-gradient(left, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
+        background: linear-gradient(to right, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#2923dd',GradientType=1 );
+        animation: compas 1s linear infinite; }
+    /* line 97, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    main .screen .helm {
+      width: 256px;
+      height: 256px;
+      border-radius: 125px;
+      position: absolute;
+      bottom: -124px;
+      left: 50%;
+      margin-left: -124px;
+      background: radial-gradient(#8a0000 4%, #5c0000 9%, rgba(102, 0, 0, 0) 9%) 0 0, radial-gradient(#8a0000 4%, #5c0000 8%, rgba(102, 0, 0, 0) 10%) 50px 50px, radial-gradient(rgba(153, 0, 0, 0.8) 20%, rgba(102, 0, 0, 0)) 50px 0, radial-gradient(rgba(153, 0, 0, 0.8) 20%, rgba(102, 0, 0, 0)) 0 50px, radial-gradient(#660000 35%, rgba(102, 0, 0, 0) 60%) 50px 0, radial-gradient(#660000 35%, rgba(102, 0, 0, 0) 60%) 100px 50px, radial-gradient(rgba(77, 0, 0, 0.7), rgba(102, 0, 0, 0)) 0 0, radial-gradient(rgba(77, 0, 0, 0.7), rgba(102, 0, 0, 0)) 50px 50px, linear-gradient(45deg, rgba(102, 0, 0, 0) 49%, black 50%, rgba(102, 0, 0, 0) 70%) 0 0, linear-gradient(-45deg, rgba(102, 0, 0, 0) 49%, black 50%, rgba(102, 0, 0, 0) 70%) 0 0;
+      background-color: #300;
+      background-size: 100px 100px;
+      animation: helm 5s linear infinite; }
 
 /*# sourceMappingURL=styles.css.map */

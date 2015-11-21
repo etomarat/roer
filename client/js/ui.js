@@ -32,5 +32,5 @@ window.timerStep = function() {
 };
 
 $(document).ready(function(){
-  
+  $('.popup').show();
 });

@@ -130,45 +130,47 @@ main {
     overflow: hidden; }
     /* line 116, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .crack-bar {
-      width: 300px;
-      height: 10px;
+      width: 322px;
+      height: 29px;
       position: absolute;
       left: 50%;
       margin-left: -150px;
-      top: 30px;
-      background-color: darkmagenta;
-      border-radius: 21px;
-      box-shadow: 0 0 0 2px #fff;
-      padding: 10px; }
-      /* line 128, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .screen .crack-bar:before {
+      top: 30px; }
+      /* line 124, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      main .screen .crack-bar .eye {
         content: '';
         position: absolute;
         width: 50px;
         height: 50px;
-        box-shadow: 0 0 0 2px #fff;
-        background-color: darkmagenta;
+        background-image: url(../img/eye.png);
         border-radius: 26px;
-        top: -10px;
+        top: -12px;
         left: -30px;
         box-sizing: border-box;
-        z-index: 2; }
-      /* line 142, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        z-index: 5; }
+      /* line 137, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
-        background-color: #fff;
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 150, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 144, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        main .screen .crack-bar .status:before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-image: url(../img/progres_frame.png);
+          position: absolute;
+          z-index: 9; }
+        /* line 153, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
-          background-color: fuchsia;
+          background-image: url(../img/progres.png);
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
-    /* line 160, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 163, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
       width: 70px;
@@ -178,7 +180,7 @@ main {
       border-radius: 36px;
       background-color: #fff;
       box-shadow: 0 0 0 2px; }
-      /* line 170, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 173, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
         width: 60px;
         height: 6px;
@@ -192,7 +194,7 @@ main {
         background: linear-gradient(to right, #ff3236 0%, #ff3033 50%, #2923dd 51%, #2923dd 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#2923dd',GradientType=1 );
         animation: compas 1s linear infinite; }
-    /* line 187, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 190, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 395px;
       height: 397px;

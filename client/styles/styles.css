@@ -1,0 +1,24 @@
+/* line 1, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+body {
+  padding: 0;
+  margin: 0; }
+
+/* line 6, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: cyan; }
+  /* line 16, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  main .screen {
+    overflow: auto;
+    height: 768px;
+    width: 1024px;
+    position: relative;
+    background-color: magenta; }
+
+/*# sourceMappingURL=styles.css.map */

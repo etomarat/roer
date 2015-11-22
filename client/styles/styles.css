@@ -204,14 +204,14 @@ main {
   /* line 185, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .bye {
     display: none; }
-  /* line 189, /Users/morad/Projects/roer/client/styles/styles.scss */
+  /* line 188, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .screen {
     height: 768px;
     width: 1024px;
     position: relative;
     background-color: magenta;
     overflow: hidden; }
-    /* line 196, /Users/morad/Projects/roer/client/styles/styles.scss */
+    /* line 195, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .crack-bar {
       width: 322px;
       height: 29px;
@@ -219,7 +219,7 @@ main {
       left: 50%;
       margin-left: -150px;
       top: 30px; }
-      /* line 205, /Users/morad/Projects/roer/client/styles/styles.scss */
+      /* line 204, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .crack-bar .eye {
         content: '';
         position: absolute;
@@ -231,14 +231,14 @@ main {
         left: -30px;
         box-sizing: border-box;
         z-index: 5; }
-      /* line 218, /Users/morad/Projects/roer/client/styles/styles.scss */
+      /* line 217, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 225, /Users/morad/Projects/roer/client/styles/styles.scss */
+        /* line 224, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .screen .crack-bar .status:before {
           content: '';
           width: 100%;
@@ -246,14 +246,14 @@ main {
           background-image: url(../img/progres_frame.png);
           position: absolute;
           z-index: 9; }
-        /* line 234, /Users/morad/Projects/roer/client/styles/styles.scss */
+        /* line 233, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
           background-image: url(../img/progres.png);
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
-    /* line 244, /Users/morad/Projects/roer/client/styles/styles.scss */
+    /* line 243, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
       width: 95px;
@@ -262,7 +262,7 @@ main {
       right: 20px;
       border-radius: 36px;
       background-image: url("../img/compas.png"); }
-      /* line 253, /Users/morad/Projects/roer/client/styles/styles.scss */
+      /* line 252, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
         width: 34px;
         height: 46px;
@@ -271,13 +271,13 @@ main {
         left: 35px;
         background-image: url("../img/compas_arrow.png");
         animation: compas 1s linear infinite; }
-    /* line 264, /Users/morad/Projects/roer/client/styles/styles.scss */
+    /* line 263, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .ship-zone {
       position: absolute;
       bottom: 200px;
       width: 100%;
       text-align: center; }
-      /* line 270, /Users/morad/Projects/roer/client/styles/styles.scss */
+      /* line 269, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .ship-zone .ship {
         display: inline-block;
         position: relative;
@@ -287,10 +287,10 @@ main {
         -moz-transition: all 300ms linear;
         -o-transition: all 300ms linear;
         transition: all 300ms linear; }
-        /* line 279, /Users/morad/Projects/roer/client/styles/styles.scss */
+        /* line 278, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .screen .ship-zone .ship img {
           width: 100%; }
-    /* line 285, /Users/morad/Projects/roer/client/styles/styles.scss */
+    /* line 284, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 395px;
       height: 397px;
@@ -310,22 +310,22 @@ main {
       -ms-transform: rotate(0deg);
       -o-transform: rotate(0deg);
       transform: rotate(0deg); }
-    /* line 307, /Users/morad/Projects/roer/client/styles/styles.scss */
+    /* line 306, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .wave {
       width: 100%;
       height: 80px;
       position: absolute;
       background-position: 0; }
-      /* line 313, /Users/morad/Projects/roer/client/styles/styles.scss */
+      /* line 312, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .wave:nth-child(2n+1) {
         animation: waveLeft 150s linear infinite;
         background-image: url("../img/waves_left.png"); }
-      /* line 318, /Users/morad/Projects/roer/client/styles/styles.scss */
+      /* line 317, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .wave:nth-child(2n+2) {
         animation: waveRight 300s linear infinite;
         background-image: url("../img/waves_right.png"); }
 
-/* line 326, /Users/morad/Projects/roer/client/styles/styles.scss */
+/* line 325, /Users/morad/Projects/roer/client/styles/styles.scss */
 .props {
   position: absolute;
   z-index: 9998;
@@ -333,21 +333,21 @@ main {
   height: 100%;
   top: 0;
   left: 0; }
-  /* line 333, /Users/morad/Projects/roer/client/styles/styles.scss */
+  /* line 332, /Users/morad/Projects/roer/client/styles/styles.scss */
   .props img {
     position: absolute;
     transition: top 1000ms linear, transform 500ms linear; }
-    /* line 337, /Users/morad/Projects/roer/client/styles/styles.scss */
+    /* line 336, /Users/morad/Projects/roer/client/styles/styles.scss */
     .props img.mirror {
       transform: scale(-1, 1); }
-    /* line 340, /Users/morad/Projects/roer/client/styles/styles.scss */
+    /* line 339, /Users/morad/Projects/roer/client/styles/styles.scss */
     .props img:nth-child(odd) {
       transform: rotate(-5deg); }
-    /* line 343, /Users/morad/Projects/roer/client/styles/styles.scss */
+    /* line 342, /Users/morad/Projects/roer/client/styles/styles.scss */
     .props img:nth-child(even) {
       transform: rotate(5deg); }
 
-/* line 349, /Users/morad/Projects/roer/client/styles/styles.scss */
+/* line 348, /Users/morad/Projects/roer/client/styles/styles.scss */
 .props-storage {
   position: absolute;
   opacity: 0; }

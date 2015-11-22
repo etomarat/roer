@@ -79,6 +79,7 @@ window.moveBoat = function(direction) {
     transform: 'rotate(' + helmRotation + 'deg)'
   });
   
+  shouter();
 };
 
 window.gameOver = function () {
@@ -163,4 +164,19 @@ $(document).ready(function () {
 //  };
 //  
 //  randomGuest();
+  
+  var randomShake = function(){
+    var timeout = 10000;
+    setInterval(function(){
+      $('.screen').addClass('shake shake-slow shake-constant');
+      
+      timeout = 5000 + Math.round(Math.random()*10000);
+      
+      setTimeout(function(){
+        $('.screen').removeClass('shake shake-slow shake-constant');
+      }, 4000);
+    }, timeout);
+  };
+  
+  randomShake();
 });

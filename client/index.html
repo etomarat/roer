@@ -12,6 +12,7 @@
     <script src="js/globals.js"></script>
     <script src="js/connect.js"></script>
     <script src="js/ui.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <main>
@@ -29,8 +30,14 @@
                 <a class="short-link" href="#">http://ti_pidor</a>
                 
                 <div class="players-row">
-                    <div class="player-1">Linkerhand</div>
-                    <div class="player-2">Rechterhand</div>
+                    <div class="player player-1" data-player="left">
+                      <div class="avatar"></div> 
+                      <span>Linkerhand</span>
+                    </div>
+                    <div class="player player-2" data-player="right">
+                      <div class="avatar"></div> 
+                      <span>Rechterhand</span>
+                    </div>
                 </div>
                 
                 <div class="timer hidden">

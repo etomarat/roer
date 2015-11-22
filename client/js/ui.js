@@ -33,4 +33,9 @@ window.timerStep = function() {
 
 $(document).ready(function(){
   
+  var startWavesGenerator = function () {
+    $('.screen').append('<div class="wave"></div>');
+  }
+  
+  startWavesGenerator();
 });

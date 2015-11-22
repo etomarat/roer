@@ -73,39 +73,51 @@ main {
       width: 1024px;
       position: relative;
       background-color: magenta;
-      overflow: hidden;
       text-align: center; }
-      /* line 47, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 46, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .popup-message h1 {
         color: #fff;
         font-size: 50px;
-        margin: 100px 0 30px 0; }
-      /* line 53, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        margin: 100px 0 30px 0;
+        font-family: 'Finger Paint';
+        text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97998px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.5136px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px; }
+      /* line 54, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .popup-message .short-link {
         font-size: 40px;
         text-align: center; }
-      /* line 58, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 59, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .popup-message .players-row {
         height: 300px;
         margin-top: 100px; }
-        /* line 62, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 63, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2 {
           width: 300px;
           height: 300px;
           display: inline-block;
-          opacity: 0.7;
-          cursor: pointer; }
+          opacity: 0.7; }
           /* line 69, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          main .popup .popup-message .players-row .player-1 .avatar, main .popup .popup-message .players-row .player-2 .avatar {
+            width: 300px;
+            height: 300px;
+            background-size: cover; }
+          /* line 74, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          main .popup .popup-message .players-row .player-1 span, main .popup .popup-message .players-row .player-2 span {
+            color: #fff;
+            font-family: 'Finger Paint';
+            font-size: 40px; }
+          /* line 80, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
           main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged {
             opacity: 1; }
-        /* line 74, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-        main .popup .popup-message .players-row .player-1 {
-          background-color: cadetblue; }
-        /* line 78, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 87, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        main .popup .popup-message .players-row .player-1 .avatar {
+          background-image: url("../img/hand_1.png"); }
+        /* line 92, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-2 {
-          margin-left: 50px;
-          background-color: darkcyan; }
-    /* line 85, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          margin-left: 50px; }
+          /* line 95, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          main .popup .popup-message .players-row .player-2 .avatar {
+            background-image: url("../img/hand_2.png"); }
+    /* line 102, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .popup .timer {
       position: absolute;
       height: 100%;
@@ -115,27 +127,27 @@ main {
       background: #000;
       color: #fff;
       font-size: 100px; }
-      /* line 95, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 112, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .timer.hidden {
         display: none; }
-      /* line 99, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 116, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .timer h1 {
         font-size: 150px; }
-  /* line 109, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 126, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
   main .screen {
     height: 768px;
     width: 1024px;
     position: relative;
     background-color: magenta;
     overflow: hidden; }
-    /* line 116, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 133, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .crack-bar {
       width: 322px;
       height: 29px;
       position: absolute;
       left: 50px;
       top: 30px; }
-      /* line 125, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 142, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .eye {
         content: '';
         position: absolute;
@@ -147,14 +159,14 @@ main {
         left: -30px;
         box-sizing: border-box;
         z-index: 5; }
-      /* line 138, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 155, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 145, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 162, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status:before {
           content: '';
           width: 100%;
@@ -162,14 +174,14 @@ main {
           background-image: url(../img/progres_frame.png);
           position: absolute;
           z-index: 9; }
-        /* line 154, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 171, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
           background-image: url(../img/progres.png);
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
-    /* line 164, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 181, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
       width: 95px;
@@ -178,7 +190,7 @@ main {
       right: 20px;
       border-radius: 36px;
       background-image: url("../img/compas.png"); }
-      /* line 173, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 190, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
         width: 34px;
         height: 46px;
@@ -187,7 +199,7 @@ main {
         left: 35px;
         background-image: url("../img/compas_arrow.png");
         animation: compas 1s linear infinite; }
-    /* line 184, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 201, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .ship-zone {
       position: absolute;
       bottom: 200px;
@@ -195,14 +207,14 @@ main {
       height: 100px;
       background-color: #000;
       text-align: center; }
-      /* line 192, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 209, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .ship-zone .ship {
         display: inline-block;
         position: relative;
         width: 100px;
         height: 100px;
         background-color: #fff; }
-    /* line 201, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 218, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 395px;
       height: 397px;
@@ -213,5 +225,10 @@ main {
       background-image: url(../img/helm.png);
       animation: helm 5s linear infinite;
       background-repeat: no-repeat; }
+    /* line 230, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    main .screen .wave {
+      width: 100%;
+      height: 80px;
+      background-image: url("../img/waves.png"); }
 
 /*# sourceMappingURL=styles.css.map */

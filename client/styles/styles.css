@@ -340,14 +340,8 @@ main {
     /* line 336, /Users/morad/Projects/roer/client/styles/styles.scss */
     .props img.mirror {
       transform: scale(-1, 1); }
-    /* line 339, /Users/morad/Projects/roer/client/styles/styles.scss */
-    .props img:nth-child(odd) {
-      transform: rotate(-5deg); }
-    /* line 342, /Users/morad/Projects/roer/client/styles/styles.scss */
-    .props img:nth-child(even) {
-      transform: rotate(5deg); }
 
-/* line 348, /Users/morad/Projects/roer/client/styles/styles.scss */
+/* line 342, /Users/morad/Projects/roer/client/styles/styles.scss */
 .props-storage {
   position: absolute;
   opacity: 0; }

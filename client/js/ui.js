@@ -21,7 +21,7 @@ window.hidePopup = function() {
 window.timerStep = function() {
   setTimeout(function(){
     var cur_time = parseInt($('.popup .timer .seconds').text());
-    if (cur_time!==0) {
+    if (cur_time!==2) {
       cur_time--;
       window.timerStep();
     } else {

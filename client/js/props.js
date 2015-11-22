@@ -79,13 +79,13 @@ window.startProp = function () {
   props.container = $('.props');
   props.container.duration = parseInt(props.container.find('img').css('transition-duration'))*1000;
   props.container.start = function() {
-    return setInterval(function () {
+    props.container.timerId = setInterval(function () {
       props.spawn();
       props.move();
       score.plus();
     }, props.container.duration);
   };
-  props.container.timerId = props.container.start();
+  props.container.start();
   props.collisionsTimerId = setInterval(function () {
     props.collisions();
   }, 100);

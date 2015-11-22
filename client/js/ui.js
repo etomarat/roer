@@ -93,15 +93,11 @@ window.gameOver = function () {
 
 window.replay = function () {
   $('.ship').css('left', 0);
-  props.container.timerId = props.props.container.start();
+  props.container.start();
   $('.bye').hide();
   $('.wavesHolder').hide();
   score.new = 0;
 };
-
-$('.bye .replay').click(function(){
-  window.replay();
-});
 
 window.renderPhoneUrl = function(shortUrl, longUrl){
   $('.popup .short-link').text(shortUrl);
@@ -113,6 +109,11 @@ $(document).ready(function () {
     e.preventDefault();
     $('.shalom').remove();
     $('.popup').show();
+  });
+  
+  
+  $('.bye .replay').click(function(){
+    window.replay();
   });
   
   $('.wavesHolder').height($(document).height());

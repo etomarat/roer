@@ -210,6 +210,11 @@ main {
                 position: relative;
                 width: 100px;
                 background-color: #fff;
+                left: 0;
+                -webkit-transition: all 100ms linear;
+                -moz-transition: all 100ms linear;
+                -o-transition: all 100ms linear;
+                transition: all 100ms linear;
                 img {
                   width: 100%;
                 }
@@ -224,8 +229,13 @@ main {
             left: 50%;
             margin-left: -198px;
             background-image: url(../img/helm.png);
-            animation: helm 5s linear infinite;
+            //animation: helm 5s linear infinite;
             background-repeat: no-repeat;
+            -webkit-transition: all 1s linear;
+            -moz-transition: all 1s linear;
+            -ms-transition: all 1s linear;
+            -o-transition: all 1s linear;
+            transition: all 1s linear;
         }
       
         .wave {

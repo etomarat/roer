@@ -23,21 +23,50 @@ window.timerStep = function() {
       cur_time--;
       window.timerStep();
     } else {
-      alert('time is out');
       window.hidePopup();
     }
     $('.popup .timer .seconds').text('0'+cur_time);
   }, 1000);
 };
 
+function collision () {
+  alert('Колизия');
+}
+
+window.collisionDetection = function () {
+  var boat = {};
+  boat.el = $('.ship');
+  boat.x = boat.el.position().left;
+  boat.y = boat.el.position().top;
+  boat.w = boat.el.width();
+  boat.h = boat.el.height();
+  
+  var shipZone = {};
+  shipZone.el = $('.ship-zone');
+  shipZone.w = shipZone.el.width();
+  
+  console.log(boat.x, boat.x+boat.w, shipZone.w);
+  if (boat.x < 0) {
+    collision();
+  }
+  if (boat.x+boat.w > shipZone.w) {
+    collision();
+  }
+};
+
 window.moveBoat = function(direction) {
-  var velocity = 1;
+  var velocity = 10;
   var offset = (direction === 'left') ? -1 : 1;
   
   var curOffset = parseInt($('.ship').css('left'));
+  $('.ship').css('left', curOffset+(offset*velocity)+'px');
   
-  console.log(offset, curOffset, ((curOffset-offset)*velocity)+'px');
-  $('.ship').css('left', ((curOffset-offset)*velocity)+'px');
+  window.collisionDetection();
+  
+  $('.helm').css({
+    transform: 'rotate(' + 180*offset + 'deg)'
+  });
+  
 };
 
 $(document).ready(function () {

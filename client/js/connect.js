@@ -19,7 +19,7 @@ var socketOnMessage = function(e) {
     right = true;
   }
   
-  if (playersReady()) {
+  if (playersReady() && message.type === 'connect') {
     alert('Оба готовы');
     window.showTimer();
     window.timerStep();

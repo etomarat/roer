@@ -27,12 +27,12 @@ window.timerStep = function() {
     } else {
       window.hidePopup();
       window.startProp();
+      randomShake();
       var mainTheme = $('.main-theme')[0];
       mainTheme.play();    
     }
     $('.popup .timer .seconds').text('0'+cur_time);
     $('.wavesHolder').hide();
-    randomShake();
   }, 1000);
 };
 
@@ -173,11 +173,12 @@ $(document).ready(function () {
 
 var randomShakeTimer;
 var randomShake = function(){
+  console.log('randomShake');
   var timeout = 10000;
   randomShakeTimer = setInterval(function(){
     $('.screen').addClass('shake shake-slow shake-constant');
 
-    timeout = 5000 + Math.round(Math.random()*10000);
+    //timeout = 5000 + Math.round(Math.random()*10000);
 
     setTimeout(function(){
       $('.screen').removeClass('shake shake-slow shake-constant');

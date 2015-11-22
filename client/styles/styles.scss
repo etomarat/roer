@@ -29,14 +29,15 @@ main {
         animation: none;
       }
     }
-    
+  
+  
     .hud {
       z-index: 10000;
       position: absolute;
       width: 100%;
       height: 100%;
     }
-  
+    
     .coast-left {
         position: absolute;
         left: 0;
@@ -160,7 +161,6 @@ main {
               span {
                 font-size: 36px;
               }
-            }
           }
         }
         

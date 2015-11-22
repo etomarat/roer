@@ -13,18 +13,23 @@ main {
     position: fixed;
     width: 100%;
     height: 100%;
+    min-height: 100%;
     z-index: 1;
     
     .wavesHolder {
       z-index: 100001;
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 100%;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
+      .wave {
+        animation: none;
+      }
     }
+  
   
     .hud {
       z-index: 10000;
@@ -32,7 +37,7 @@ main {
       width: 100%;
       height: 100%;
     }
-  
+    
     .coast-left {
         position: absolute;
         left: 0;
@@ -72,6 +77,9 @@ main {
         z-index: 100002;
         background-size: 16px 48px;
         display: none;
+        .wave {
+          animation: none;
+        }
         
         .popup-message, .shalom-message, .bye-message {
             overflow: hidden;
@@ -88,7 +96,7 @@ main {
                 letter-spacing: 7px;
             }
             
-            .short-link {
+            .link {
                 display: block;
                 font-size: 36px;
                 text-align: center;
@@ -133,7 +141,7 @@ main {
                 .player-1 {
                   
                     .avatar {
-                        background-image: url('../img/hand_1.png')
+                      background-image: url('../img/hand_1.png')
                     }
                 }
                 
@@ -161,6 +169,7 @@ main {
               span {
                 font-size: 36px;
               }
+<<<<<<< HEAD
             }
             .score-max {
               color: #971010;
@@ -177,6 +186,8 @@ main {
             width: 385px;
             height: 402px;
             margin: 9px auto 0;
+=======
+>>>>>>> origin/master
           }
         }
         
@@ -279,7 +290,7 @@ main {
         height: 768px;
         width: 1024px;
         position: relative;
-        background-color: magenta;
+        background-color: #1e4366;
         overflow: hidden;
         
         .crack-bar {

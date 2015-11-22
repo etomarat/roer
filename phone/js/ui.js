@@ -14,11 +14,9 @@ $(document).on('ready', function(){
     var roomId = window.getRoomId();
     window.createSocket(roomId);
     
-    setTimeout(function(){
-      socket.send(JSON.stringify({
-        type: 'connect',
-        player: window.playerSide,
-      }));
-    }, 300);
+    socket.send(JSON.stringify({
+      type: 'connect',
+      player: window.playerSide,
+    }));
   });
 });

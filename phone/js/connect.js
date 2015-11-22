@@ -6,8 +6,8 @@ var socket;
 var socketOnOpen = function() {
   
   var shakeEvent = new Shake({
-    threshold: 15,
-    timeout: 200
+    threshold: 10,
+    timeout: 100
   });
   
   shakeEvent.start();

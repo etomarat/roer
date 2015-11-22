@@ -69,7 +69,7 @@ window.moveBoat = function(direction) {
   
   window.collisionDetection();
   
-  helmRotation = helmRotation+(offset*2);
+  helmRotation = helmRotation+(offset*1.4);
   $('.helm').css({
     transform: 'rotate(' + helmRotation + 'deg)'
   });

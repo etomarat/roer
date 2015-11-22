@@ -13,6 +13,7 @@ props.alive = [];
 props.spawn = function () {
   var prop = props.getRandom();
   
+  /*
   var q = (props.container.width()/100)*25;
   var ol = parseInt($('.ship').css('left'));
   
@@ -24,10 +25,11 @@ props.spawn = function () {
   var maxx = props.container.width();
   if (ol+$('.ship').width()+q < props.container.width()) {
     maxx = ol+$('.ship').width()+q;
-  } props.container.width();
+  }
   console.log(q, ol, minx, maxx);
-  //var x = _.random(0, props.container.width());
-  var x = _.random(minx, maxx);
+  */
+  var x = _.random(0, props.container.width());
+  //var x = _.random(minx, maxx);
   var y = -prop.height();
   
   prop.css({

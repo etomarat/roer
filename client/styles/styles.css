@@ -101,7 +101,7 @@ main {
     background-position: 0 0;
     animation: coasts 150s linear infinite; }
   /* line 52, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-  main .popup {
+  main .popup, main .shalom {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +115,7 @@ main {
     background-size: 16px 48px;
     display: none; }
     /* line 71, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-    main .popup .popup-message {
+    main .popup .popup-message, main .popup .shalom-message, main .shalom .popup-message, main .shalom .shalom-message {
       overflow: hidden;
       height: 768px;
       width: 1024px;
@@ -123,50 +123,50 @@ main {
       background-color: magenta;
       text-align: center; }
       /* line 79, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .popup-message h1 {
+      main .popup .popup-message h1, main .popup .shalom-message h1, main .shalom .popup-message h1, main .shalom .shalom-message h1 {
         color: #fff;
         font-size: 50px;
         margin: 100px 0 30px 0;
         font-family: 'Finger Paint';
         text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97998px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.5136px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px; }
       /* line 87, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .popup-message .short-link {
+      main .popup .popup-message .short-link, main .popup .shalom-message .short-link, main .shalom .popup-message .short-link, main .shalom .shalom-message .short-link {
         font-size: 40px;
         text-align: center; }
       /* line 92, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .popup-message .players-row {
+      main .popup .popup-message .players-row, main .popup .shalom-message .players-row, main .shalom .popup-message .players-row, main .shalom .shalom-message .players-row {
         height: 300px;
         margin-top: 100px; }
         /* line 96, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-        main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2 {
+        main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2, main .popup .shalom-message .players-row .player-1, main .popup .shalom-message .players-row .player-2, main .shalom .popup-message .players-row .player-1, main .shalom .popup-message .players-row .player-2, main .shalom .shalom-message .players-row .player-1, main .shalom .shalom-message .players-row .player-2 {
           width: 300px;
           height: 300px;
           display: inline-block;
           opacity: 0.7; }
           /* line 102, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-          main .popup .popup-message .players-row .player-1 .avatar, main .popup .popup-message .players-row .player-2 .avatar {
+          main .popup .popup-message .players-row .player-1 .avatar, main .popup .popup-message .players-row .player-2 .avatar, main .popup .shalom-message .players-row .player-1 .avatar, main .popup .shalom-message .players-row .player-2 .avatar, main .shalom .popup-message .players-row .player-1 .avatar, main .shalom .popup-message .players-row .player-2 .avatar, main .shalom .shalom-message .players-row .player-1 .avatar, main .shalom .shalom-message .players-row .player-2 .avatar {
             width: 300px;
             height: 300px;
             background-size: cover; }
           /* line 107, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-          main .popup .popup-message .players-row .player-1 span, main .popup .popup-message .players-row .player-2 span {
+          main .popup .popup-message .players-row .player-1 span, main .popup .popup-message .players-row .player-2 span, main .popup .shalom-message .players-row .player-1 span, main .popup .shalom-message .players-row .player-2 span, main .shalom .popup-message .players-row .player-1 span, main .shalom .popup-message .players-row .player-2 span, main .shalom .shalom-message .players-row .player-1 span, main .shalom .shalom-message .players-row .player-2 span {
             color: #fff;
             font-family: 'Finger Paint';
             font-size: 40px; }
           /* line 113, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-          main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged {
+          main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged, main .popup .shalom-message .players-row .player-1.logged, main .popup .shalom-message .players-row .player-2.logged, main .shalom .popup-message .players-row .player-1.logged, main .shalom .popup-message .players-row .player-2.logged, main .shalom .shalom-message .players-row .player-1.logged, main .shalom .shalom-message .players-row .player-2.logged {
             opacity: 1; }
         /* line 120, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-        main .popup .popup-message .players-row .player-1 .avatar {
+        main .popup .popup-message .players-row .player-1 .avatar, main .popup .shalom-message .players-row .player-1 .avatar, main .shalom .popup-message .players-row .player-1 .avatar, main .shalom .shalom-message .players-row .player-1 .avatar {
           background-image: url("../img/hand_1.png"); }
         /* line 125, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-        main .popup .popup-message .players-row .player-2 {
+        main .popup .popup-message .players-row .player-2, main .popup .shalom-message .players-row .player-2, main .shalom .popup-message .players-row .player-2, main .shalom .shalom-message .players-row .player-2 {
           margin-left: 50px; }
           /* line 128, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-          main .popup .popup-message .players-row .player-2 .avatar {
+          main .popup .popup-message .players-row .player-2 .avatar, main .popup .shalom-message .players-row .player-2 .avatar, main .shalom .popup-message .players-row .player-2 .avatar, main .shalom .shalom-message .players-row .player-2 .avatar {
             background-image: url("../img/hand_2.png"); }
     /* line 135, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-    main .popup .timer {
+    main .popup .timer, main .shalom .timer {
       position: absolute;
       height: 100%;
       width: 100%;
@@ -174,28 +174,49 @@ main {
       top: 0;
       background: #000;
       color: #fff;
-      font-size: 100px; }
-      /* line 145, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .timer.hidden {
-        display: none; }
-      /* line 149, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .timer h1 {
+      font-size: 100px;
+      transition: all 0.5s; }
+      /* line 146, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      main .popup .timer.hidden, main .shalom .timer.hidden {
+        top: 768px; }
+      /* line 150, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      main .popup .timer h1, main .shalom .timer h1 {
         font-size: 150px; }
-  /* line 159, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 160, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  main .shalom {
+    z-index: 99999;
+    background-color: #666;
+    display: block; }
+    /* line 166, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    main .shalom .shalom-title span {
+      font-size: 30px;
+      white-space: nowrap; }
+    /* line 172, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    main .shalom .logo {
+      width: 400px;
+      height: 350px;
+      margin: 30px auto 0;
+      background-color: #666; }
+    /* line 179, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    main .shalom .play {
+      color: aquamarine;
+      font-size: 50px; }
+  /* line 185, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
   main .screen {
     height: 768px;
     width: 1024px;
     position: relative;
     background-color: magenta;
     overflow: hidden; }
-    /* line 166, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 192, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .crack-bar {
       width: 322px;
       height: 29px;
       position: absolute;
-      left: 50px;
+      left: 50%;
+      margin-left: -150px;
       top: 30px; }
-      /* line 175, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 201, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .eye {
         content: '';
         position: absolute;
@@ -207,14 +228,14 @@ main {
         left: -30px;
         box-sizing: border-box;
         z-index: 5; }
-      /* line 188, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 214, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 195, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 221, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status:before {
           content: '';
           width: 100%;
@@ -222,14 +243,14 @@ main {
           background-image: url(../img/progres_frame.png);
           position: absolute;
           z-index: 9; }
-        /* line 204, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 230, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
           background-image: url(../img/progres.png);
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
-    /* line 214, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 240, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
       width: 95px;
@@ -238,7 +259,7 @@ main {
       right: 20px;
       border-radius: 36px;
       background-image: url("../img/compas.png"); }
-      /* line 223, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 249, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
         width: 34px;
         height: 46px;
@@ -247,13 +268,13 @@ main {
         left: 35px;
         background-image: url("../img/compas_arrow.png");
         animation: compas 1s linear infinite; }
-    /* line 234, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 260, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .ship-zone {
       position: absolute;
       bottom: 200px;
       width: 100%;
       text-align: center; }
-      /* line 240, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 266, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .ship-zone .ship {
         display: inline-block;
         position: relative;
@@ -264,10 +285,10 @@ main {
         -moz-transition: all 100ms linear;
         -o-transition: all 100ms linear;
         transition: all 100ms linear; }
-        /* line 250, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 276, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .ship-zone .ship img {
           width: 100%; }
-    /* line 256, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 282, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 395px;
       height: 397px;
@@ -282,21 +303,22 @@ main {
       -ms-transition: all 1s linear;
       -o-transition: all 1s linear;
       transition: all 1s linear; }
-    /* line 273, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 299, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .wave {
       width: 100%;
       height: 80px;
-      background-image: url("../img/waves.png");
       position: absolute;
       background-position: 0; }
-      /* line 280, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 305, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .wave:nth-child(2n+1) {
-        animation: waveLeft 150s linear infinite; }
-      /* line 284, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        animation: waveLeft 150s linear infinite;
+        background-image: url("../img/waves_left.png"); }
+      /* line 310, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .wave:nth-child(2n+2) {
-        animation: waveRight 300s linear infinite; }
+        animation: waveRight 300s linear infinite;
+        background-image: url("../img/waves_right.png"); }
 
-/* line 291, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 318, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
 .props {
   position: absolute;
   z-index: 9998;
@@ -304,7 +326,7 @@ main {
   height: 100%;
   top: 0;
   left: 0; }
-  /* line 298, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 325, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
   .props img {
     position: absolute;
     -webkit-transition: all 1000ms linear;
@@ -312,7 +334,7 @@ main {
     -o-transition: all 1000ms linear;
     transition: all 1000ms linear; }
 
-/* line 307, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 334, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
 .props-storage {
   position: absolute;
   opacity: 0; }

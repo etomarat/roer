@@ -70,7 +70,12 @@ window.moveBoat = function(direction) {
 };
 
 $(document).ready(function () {
-  //$('.popup').show();
+  
+  $('.play').on('click', function() {
+    $('.shalom').fadeOut();
+    $('.popup').show();
+  });
+  //
   
   var wavesCounter = Math.round($('.screen').height() / 80 * 2);
   var startWavesGenerator = function () {

@@ -52,7 +52,6 @@ main {
         background-position: 0 0;
         animation: coasts 150s linear infinite;
     }
-  
     .coast-right {
         position: absolute;
         right: 0;
@@ -100,7 +99,7 @@ main {
             
             .link {
                 display: block;
-                font-size: 36px;
+                font-size: 26px;
                 text-align: center;
                 width: 312px;
                 height: 76px;
@@ -110,6 +109,9 @@ main {
                 color: #9d1e1e;
                 font-family: 'Love Ya Like A Sister';
                 line-height: 80px;
+              .long-link {
+                
+              }
             }
             
             .players-row {
@@ -121,7 +123,7 @@ main {
                     height: 150px;
                     display: inline-block;
                     text-align: center;
-                    opacity: 0.7;
+                    opacity: 0.3;
                   
                     .avatar {
                         width: 118px;

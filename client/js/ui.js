@@ -31,7 +31,7 @@ window.timerStep = function() {
       mainTheme.play();    
     }
     $('.popup .timer .seconds').text('0'+cur_time);
-    $('.wavesHolder').remove();
+    $('.wavesHolder').hide();
   }, 1000);
 };
 
@@ -81,6 +81,25 @@ window.moveBoat = function(direction) {
   
 };
 
+window.gameOver = function () {
+  $('.bye .score .final-score').text(score.new);
+  $('.bye .score .score-max').text(score.hiScore());
+  
+  score.isNewHiscore();
+  $('.bye').show();
+  $('.wavesHolder').show();
+  props.killAll();
+  clearInterval(props.container.timerId);
+};
+
+window.replay = function () {
+  $('.ship').css('left', 0);
+  props.container.start();
+  $('.bye').hide();
+  $('.wavesHolder').hide();
+  score.new = 0;
+};
+
 window.renderPhoneUrl = function(shortUrl, longUrl){
   $('.popup .short-link').text(shortUrl);
   $('.popup .long-link').text(longUrl);
@@ -91,6 +110,11 @@ $(document).ready(function () {
     e.preventDefault();
     $('.shalom').remove();
     $('.popup').show();
+  });
+  
+  
+  $('.bye .replay').click(function(){
+    window.replay();
   });
   
   $('.wavesHolder').height($(document).height());

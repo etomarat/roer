@@ -78,13 +78,13 @@
   100% {
     transform: scale(0.9); } }
 
-/* line 3, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 3, /Users/morad/Projects/roer/client/styles/styles.scss */
 body {
   padding: 0;
   margin: 0;
   background: url(../img/pattern.jpg); }
 
-/* line 10, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 10, /Users/morad/Projects/roer/client/styles/styles.scss */
 main {
   display: flex;
   justify-content: center;
@@ -95,7 +95,7 @@ main {
   height: 100%;
   min-height: 100%;
   z-index: 1; }
-  /* line 21, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 21, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .wavesHolder {
     z-index: 100001;
     position: fixed;
@@ -105,16 +105,16 @@ main {
     right: 0;
     bottom: 0;
     left: 0; }
-    /* line 30, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 30, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .wavesHolder .wave {
       animation: none; }
-  /* line 36, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 36, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .hud {
     z-index: 10000;
     position: absolute;
     width: 100%;
     height: 100%; }
-  /* line 43, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 43, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .coast-left {
     position: absolute;
     left: 0;
@@ -126,7 +126,7 @@ main {
     background-image: url("../img/coast_left.png");
     background-position: 0 0;
     animation: coasts 150s linear infinite; }
-  /* line 56, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 55, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .coast-right {
     position: absolute;
     right: 0;
@@ -138,7 +138,7 @@ main {
     background-image: url("../img/coast_right.png");
     background-position: 0 0;
     animation: coasts 150s linear infinite; }
-  /* line 69, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 68, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .popup, main .shalom, main .bye {
     display: flex;
     justify-content: center;
@@ -151,27 +151,27 @@ main {
     z-index: 100002;
     background-size: 16px 48px;
     display: none; }
-    /* line 82, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 81, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .wave, main .shalom .wave, main .bye .wave {
       animation: none; }
-    /* line 86, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 85, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .popup-message, main .popup .shalom-message, main .popup .bye-message, main .shalom .popup-message, main .shalom .shalom-message, main .shalom .bye-message, main .bye .popup-message, main .bye .shalom-message, main .bye .bye-message {
       overflow: hidden;
       height: 768px;
       width: 1024px;
       position: relative;
       text-align: center; }
-      /* line 93, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 92, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .popup-message h1, main .popup .shalom-message h1, main .popup .bye-message h1, main .shalom .popup-message h1, main .shalom .shalom-message h1, main .shalom .bye-message h1, main .bye .popup-message h1, main .bye .shalom-message h1, main .bye .bye-message h1 {
         color: #fff;
         font-size: 48px;
         margin: 100px 0 30px 0;
         font-family: 'Love Ya Like A Sister';
         letter-spacing: 7px; }
-      /* line 101, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 100, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .popup-message .link, main .popup .shalom-message .link, main .popup .bye-message .link, main .shalom .popup-message .link, main .shalom .shalom-message .link, main .shalom .bye-message .link, main .bye .popup-message .link, main .bye .shalom-message .link, main .bye .bye-message .link {
         display: block;
-        font-size: 36px;
+        font-size: 26px;
         text-align: center;
         width: 312px;
         height: 76px;
@@ -181,53 +181,53 @@ main {
         color: #9d1e1e;
         font-family: 'Love Ya Like A Sister';
         line-height: 80px; }
-      /* line 115, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 117, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .popup-message .players-row, main .popup .shalom-message .players-row, main .popup .bye-message .players-row, main .shalom .popup-message .players-row, main .shalom .shalom-message .players-row, main .shalom .bye-message .players-row, main .bye .popup-message .players-row, main .bye .shalom-message .players-row, main .bye .bye-message .players-row {
         height: 300px;
         margin-top: 100px; }
-        /* line 119, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 121, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2, main .popup .shalom-message .players-row .player-1, main .popup .shalom-message .players-row .player-2, main .popup .bye-message .players-row .player-1, main .popup .bye-message .players-row .player-2, main .shalom .popup-message .players-row .player-1, main .shalom .popup-message .players-row .player-2, main .shalom .shalom-message .players-row .player-1, main .shalom .shalom-message .players-row .player-2, main .shalom .bye-message .players-row .player-1, main .shalom .bye-message .players-row .player-2, main .bye .popup-message .players-row .player-1, main .bye .popup-message .players-row .player-2, main .bye .shalom-message .players-row .player-1, main .bye .shalom-message .players-row .player-2, main .bye .bye-message .players-row .player-1, main .bye .bye-message .players-row .player-2 {
           width: 240px;
           height: 150px;
           display: inline-block;
           text-align: center;
-          opacity: 0.7; }
-          /* line 126, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          opacity: 0.3; }
+          /* line 128, /Users/morad/Projects/roer/client/styles/styles.scss */
           main .popup .popup-message .players-row .player-1 .avatar, main .popup .popup-message .players-row .player-2 .avatar, main .popup .shalom-message .players-row .player-1 .avatar, main .popup .shalom-message .players-row .player-2 .avatar, main .popup .bye-message .players-row .player-1 .avatar, main .popup .bye-message .players-row .player-2 .avatar, main .shalom .popup-message .players-row .player-1 .avatar, main .shalom .popup-message .players-row .player-2 .avatar, main .shalom .shalom-message .players-row .player-1 .avatar, main .shalom .shalom-message .players-row .player-2 .avatar, main .shalom .bye-message .players-row .player-1 .avatar, main .shalom .bye-message .players-row .player-2 .avatar, main .bye .popup-message .players-row .player-1 .avatar, main .bye .popup-message .players-row .player-2 .avatar, main .bye .shalom-message .players-row .player-1 .avatar, main .bye .shalom-message .players-row .player-2 .avatar, main .bye .bye-message .players-row .player-1 .avatar, main .bye .bye-message .players-row .player-2 .avatar {
             width: 118px;
             height: 118px;
             display: inline-block; }
-          /* line 132, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          /* line 134, /Users/morad/Projects/roer/client/styles/styles.scss */
           main .popup .popup-message .players-row .player-1 span, main .popup .popup-message .players-row .player-2 span, main .popup .shalom-message .players-row .player-1 span, main .popup .shalom-message .players-row .player-2 span, main .popup .bye-message .players-row .player-1 span, main .popup .bye-message .players-row .player-2 span, main .shalom .popup-message .players-row .player-1 span, main .shalom .popup-message .players-row .player-2 span, main .shalom .shalom-message .players-row .player-1 span, main .shalom .shalom-message .players-row .player-2 span, main .shalom .bye-message .players-row .player-1 span, main .shalom .bye-message .players-row .player-2 span, main .bye .popup-message .players-row .player-1 span, main .bye .popup-message .players-row .player-2 span, main .bye .shalom-message .players-row .player-1 span, main .bye .shalom-message .players-row .player-2 span, main .bye .bye-message .players-row .player-1 span, main .bye .bye-message .players-row .player-2 span {
             color: #fff;
             font-family: 'Finger Paint';
             font-size: 22px; }
-          /* line 138, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          /* line 140, /Users/morad/Projects/roer/client/styles/styles.scss */
           main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged, main .popup .shalom-message .players-row .player-1.logged, main .popup .shalom-message .players-row .player-2.logged, main .popup .bye-message .players-row .player-1.logged, main .popup .bye-message .players-row .player-2.logged, main .shalom .popup-message .players-row .player-1.logged, main .shalom .popup-message .players-row .player-2.logged, main .shalom .shalom-message .players-row .player-1.logged, main .shalom .shalom-message .players-row .player-2.logged, main .shalom .bye-message .players-row .player-1.logged, main .shalom .bye-message .players-row .player-2.logged, main .bye .popup-message .players-row .player-1.logged, main .bye .popup-message .players-row .player-2.logged, main .bye .shalom-message .players-row .player-1.logged, main .bye .shalom-message .players-row .player-2.logged, main .bye .bye-message .players-row .player-1.logged, main .bye .bye-message .players-row .player-2.logged {
             opacity: 1; }
-        /* line 145, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 147, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-1 .avatar, main .popup .shalom-message .players-row .player-1 .avatar, main .popup .bye-message .players-row .player-1 .avatar, main .shalom .popup-message .players-row .player-1 .avatar, main .shalom .shalom-message .players-row .player-1 .avatar, main .shalom .bye-message .players-row .player-1 .avatar, main .bye .popup-message .players-row .player-1 .avatar, main .bye .shalom-message .players-row .player-1 .avatar, main .bye .bye-message .players-row .player-1 .avatar {
           background-image: url("../img/hand_1.png"); }
-        /* line 150, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 152, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-2, main .popup .shalom-message .players-row .player-2, main .popup .bye-message .players-row .player-2, main .shalom .popup-message .players-row .player-2, main .shalom .shalom-message .players-row .player-2, main .shalom .bye-message .players-row .player-2, main .bye .popup-message .players-row .player-2, main .bye .shalom-message .players-row .player-2, main .bye .bye-message .players-row .player-2 {
           margin-left: 50px; }
-          /* line 153, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          /* line 155, /Users/morad/Projects/roer/client/styles/styles.scss */
           main .popup .popup-message .players-row .player-2 .avatar, main .popup .shalom-message .players-row .player-2 .avatar, main .popup .bye-message .players-row .player-2 .avatar, main .shalom .popup-message .players-row .player-2 .avatar, main .shalom .shalom-message .players-row .player-2 .avatar, main .shalom .bye-message .players-row .player-2 .avatar, main .bye .popup-message .players-row .player-2 .avatar, main .bye .shalom-message .players-row .player-2 .avatar, main .bye .bye-message .players-row .player-2 .avatar {
             background-image: url("../img/hand_2.png"); }
-    /* line 162, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 164, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .bye-message h1, main .shalom .bye-message h1, main .bye .bye-message h1 {
       margin-top: 70px;
       margin-bottom: 10px; }
-    /* line 166, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 168, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .bye-message .score, main .popup .bye-message .score-max, main .shalom .bye-message .score, main .shalom .bye-message .score-max, main .bye .bye-message .score, main .bye .bye-message .score-max {
       font-size: 21px;
       font-family: 'Love Ya Like A Sister';
       color: #fff;
       text-align: center; }
-      /* line 172, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 174, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .bye-message .score span, main .popup .bye-message .score-max span, main .shalom .bye-message .score span, main .shalom .bye-message .score-max span, main .bye .bye-message .score span, main .bye .bye-message .score-max span {
         font-size: 36px; }
-    /* line 176, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 178, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .bye-message .score-max, main .shalom .bye-message .score-max, main .bye .bye-message .score-max {
       color: #971010;
       background-image: url("../img/link-bg.png");
@@ -236,17 +236,17 @@ main {
       background-position: center;
       padding: 10px 0;
       background-size: contain; }
-    /* line 186, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 188, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .bye-message .logo-last, main .shalom .bye-message .logo-last, main .bye .bye-message .logo-last {
       background-image: url("../img/broken.png");
       width: 385px;
       height: 402px;
       margin: 9px auto 0;
       margin: -124px auto 0; }
-    /* line 194, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 196, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .bye-message .replay, main .shalom .bye-message .replay, main .bye .bye-message .replay {
       margin: 40px auto; }
-    /* line 199, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 201, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .timer, main .shalom .timer, main .bye .timer {
       position: absolute;
       height: 100%;
@@ -257,17 +257,17 @@ main {
       color: #fff;
       font-size: 100px;
       transition: all 0.5s; }
-      /* line 210, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 212, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .timer.hidden, main .shalom .timer.hidden, main .bye .timer.hidden {
         top: 768px; }
-      /* line 214, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 216, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .timer h1, main .shalom .timer h1, main .bye .timer h1 {
         font-size: 150px; }
-  /* line 225, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 227, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .shalom, main .bye {
     z-index: 100002;
     display: block; }
-    /* line 230, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 232, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .shalom .shalom-title span, main .shalom .bye-title span, main .bye .shalom-title span, main .bye .bye-title span {
       font-size: 24px;
       position: relative;
@@ -275,7 +275,7 @@ main {
       font-family: 'Finger Paint';
       top: 125px;
       color: #fff; }
-    /* line 240, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 242, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .shalom .shalom-title, main .bye .shalom-title {
       background-image: url("../img/logo.png");
       width: 100%;
@@ -283,13 +283,13 @@ main {
       background-position: center;
       height: 106px;
       margin: 30px auto 25px; }
-    /* line 249, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 251, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .shalom .logo, main .shalom .logo-last, main .bye .logo, main .bye .logo-last {
       width: 400px;
       height: 350px;
       margin: 67px auto 0;
       position: relative; }
-      /* line 255, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 257, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .shalom .logo .helm, main .shalom .logo-last .helm, main .bye .logo .helm, main .bye .logo-last .helm {
         width: 395px;
         height: 397px;
@@ -300,7 +300,7 @@ main {
         background-repeat: no-repeat;
         transition: all 1s linear;
         transform: rotate(0deg); }
-      /* line 267, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 269, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .shalom .logo .herb, main .shalom .logo-last .herb, main .bye .logo .herb, main .bye .logo-last .herb {
         width: 201px;
         height: 229px;
@@ -310,27 +310,27 @@ main {
         left: 100px;
         transform: scale(0.8);
         animation: pulse 3s linear infinite; }
-    /* line 279, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 281, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .shalom .play, main .shalom .replay, main .bye .play, main .bye .replay {
       width: 191px;
       height: 59px;
       display: block;
       background-image: url("../img/button.png");
       margin: 90px auto; }
-      /* line 286, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 288, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .shalom .play:hover, main .shalom .replay:hover, main .bye .play:hover, main .bye .replay:hover {
         background-image: url("../img/button_hover.png"); }
-  /* line 291, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 293, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .bye {
     display: none; }
-  /* line 294, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 296, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .screen {
     height: 768px;
     width: 1024px;
     position: relative;
     background-color: #1e4366;
     overflow: hidden; }
-    /* line 301, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 303, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .crack-bar {
       width: 322px;
       height: 29px;
@@ -338,7 +338,7 @@ main {
       left: 50%;
       margin-left: -150px;
       top: 30px; }
-      /* line 310, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 312, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .crack-bar .eye {
         content: '';
         position: absolute;
@@ -350,14 +350,14 @@ main {
         left: -30px;
         box-sizing: border-box;
         z-index: 5; }
-      /* line 323, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 325, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 330, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 332, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .screen .crack-bar .status:before {
           content: '';
           width: 100%;
@@ -365,14 +365,14 @@ main {
           background-image: url(../img/progres_frame.png);
           position: absolute;
           z-index: 9; }
-        /* line 339, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 341, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
           background-image: url(../img/progres.png);
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
-    /* line 349, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 351, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
       width: 95px;
@@ -381,7 +381,7 @@ main {
       right: 20px;
       border-radius: 36px;
       background-image: url("../img/compas.png"); }
-      /* line 358, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 360, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
         width: 34px;
         height: 46px;
@@ -390,13 +390,13 @@ main {
         left: 35px;
         background-image: url("../img/compas_arrow.png");
         animation: compas 1s linear infinite; }
-    /* line 369, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 371, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .ship-zone {
       position: absolute;
       bottom: 200px;
       width: 100%;
       text-align: center; }
-      /* line 375, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 377, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .ship-zone .ship {
         display: inline-block;
         position: relative;
@@ -406,10 +406,10 @@ main {
         -moz-transition: all 300ms linear;
         -o-transition: all 300ms linear;
         transition: all 300ms linear; }
-        /* line 384, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 386, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .screen .ship-zone .ship img {
           width: 100%; }
-    /* line 390, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 392, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 395px;
       height: 397px;
@@ -430,22 +430,22 @@ main {
       -o-transform: rotate(0deg);
       transform: rotate(0deg); }
 
-/* line 414, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 416, /Users/morad/Projects/roer/client/styles/styles.scss */
 .wave {
   width: 100%;
   height: 80px;
   position: absolute;
   background-position: 0; }
-  /* line 420, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 422, /Users/morad/Projects/roer/client/styles/styles.scss */
   .wave:nth-child(2n+1) {
     animation: waveLeft 150s linear infinite;
     background-image: url("../img/waves_left.png"); }
-  /* line 425, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 427, /Users/morad/Projects/roer/client/styles/styles.scss */
   .wave:nth-child(2n+2) {
     animation: waveRight 300s linear infinite;
     background-image: url("../img/waves_right.png"); }
 
-/* line 431, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 433, /Users/morad/Projects/roer/client/styles/styles.scss */
 .props {
   position: absolute;
   z-index: 9998;
@@ -453,30 +453,30 @@ main {
   height: 100%;
   top: 0;
   left: 0; }
-  /* line 438, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 440, /Users/morad/Projects/roer/client/styles/styles.scss */
   .props img {
     position: absolute;
     transition: top 1000ms linear, transform 500ms linear; }
-    /* line 442, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 444, /Users/morad/Projects/roer/client/styles/styles.scss */
     .props img.mirror {
       transform: scale(-1, 1); }
 
-/* line 448, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 450, /Users/morad/Projects/roer/client/styles/styles.scss */
 .props-storage {
   position: absolute;
   opacity: 0; }
 
-/* line 453, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 455, /Users/morad/Projects/roer/client/styles/styles.scss */
 .hud .score {
   font-family: 'Love Ya Like A Sister';
   color: white;
   position: absolute;
   margin-top: 30px;
   margin-left: 100px; }
-  /* line 459, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 461, /Users/morad/Projects/roer/client/styles/styles.scss */
   .hud .score .label {
     font-size: 16px; }
-  /* line 462, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 464, /Users/morad/Projects/roer/client/styles/styles.scss */
   .hud .score .number {
     font-size: 28px; }
 

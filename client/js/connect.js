@@ -25,6 +25,7 @@ var socketOnMessage = function(e) {
     window.showTimer();
     window.timerStep();
     gameStart = true;
+    $('.ambient').html('');
   }
   
   window.renderLogged([left, right]);

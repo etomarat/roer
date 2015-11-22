@@ -29,7 +29,7 @@ main {
         animation: none;
       }
     }
-  
+    
     .hud {
       z-index: 10000;
       position: absolute;
@@ -113,20 +113,22 @@ main {
                 margin-top: 100px;
                 
                 .player-1, .player-2 {
-                    width: 300px;
-                    height: 300px;
+                    width: 240px;
+                    height: 150px;
                     display: inline-block;
+                    text-align: center;
                     opacity: 0.7;
                   
                     .avatar {
-                        width: 300px;
-                        height: 300px;
-                        background-size: cover;
+                        width: 118px;
+                        height: 118px;
+                        display: inline-block;
+//                        background-size: cover;
                     }
                     span {
                         color: #fff;
                         font-family: 'Finger Paint';
-                        font-size: 40px;  
+                        font-size: 22px;  
                     }
                     
                     &.logged {
@@ -149,6 +151,17 @@ main {
                     }
                 }
             }
+        }
+      
+        .bye-message {
+          .score, .score-max {
+              font-size: 21px;
+            
+              span {
+                font-size: 36px;
+              }
+            }
+          }
         }
         
         .timer {

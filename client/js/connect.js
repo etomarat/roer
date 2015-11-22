@@ -4,6 +4,7 @@ var socket;
 var desctop_socket_url = window.socket_url+ 'desktop/';
 var left = false;
 var right = false;
+var gameStart = false;
 
 var playersReady = function(){
   return Boolean(_.indexOf([left, right], false) === -1);
@@ -23,12 +24,15 @@ var socketOnMessage = function(e) {
     alert('Оба готовы');
     window.showTimer();
     window.timerStep();
+    gameStart = true;
   }
   
   window.renderLogged([left, right]);
   
   if (message.type === 'shake') {
-    window.moveBoat(message.player);
+    if (gameStart === true) {
+      window.moveBoat(message.player);      
+    }
   }
   
   console.log(e.data, JSON.parse(e.data));

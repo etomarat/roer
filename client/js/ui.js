@@ -24,6 +24,7 @@ window.timerStep = function() {
       window.timerStep();
     } else {
       window.hidePopup();
+      window.startProp();
     }
     $('.popup .timer .seconds').text('0'+cur_time);
   }, 1000);
@@ -82,7 +83,8 @@ window.renderPhoneUrl = function(shortUrl){
 $(document).ready(function () {
   $('.popup').show();
   
-  $('.play').on('click', function() {
+  $('.play').on('click', function(e) {
+    e.preventDefault();
     $('.shalom').fadeOut();
     $('.popup').show();
   });
@@ -96,7 +98,7 @@ $(document).ready(function () {
       $('.screen').append('<div style="top:' + wavePosition + 'px; z-index: ' + waveIndex + ';" class="wave"></div>');
       wavePosition = wavePosition - 40;
       waveIndex = waveIndex - 1;
-    }  
+    }
   };
   startWavesGenerator();
   

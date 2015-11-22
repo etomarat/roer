@@ -21,6 +21,10 @@ props.spawn = function () {
     top: y
   });
   
+  if (_.random(0, 1) === 1) {
+    prop.addClass('mirror');
+  }
+  
   prop = prop.appendTo(props.container);
   props.alive.push(prop);
   return prop;
@@ -79,5 +83,5 @@ window.startProp = function () {
 };
 
 $(document).ready(function () {
-  window.startProp();
+  
 });

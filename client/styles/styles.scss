@@ -156,7 +156,8 @@ main {
             }
         }
     }
-  
+    
+    
     .shalom, .bye {
       z-index: 99999;
       background-color: #666;
@@ -180,6 +181,9 @@ main {
         color: aquamarine;
         font-size: 50px;
       }
+    }
+    .bye {
+      display: none;
     }
 
     .screen {
@@ -328,10 +332,17 @@ main {
   left: 0;
   img {
     position: absolute;
-    -webkit-transition: all 1000ms linear;
-       -moz-transition: all 1000ms linear;
-         -o-transition: all 1000ms linear;
-            transition: all 1000ms linear;
+    transition: top 1000ms linear, transform 500ms linear;
+    
+    &.mirror {
+      transform: scale(-1, 1);
+    }
+    &:nth-child(odd) {
+      transform: rotate(-5deg);
+    }
+    &:nth-child(even) {
+      transform: rotate(5deg);
+    }
   }
 }
 

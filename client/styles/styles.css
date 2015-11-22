@@ -480,4 +480,19 @@ main {
   .hud .score .number {
     font-size: 28px; }
 
+/* line 467, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+.random-guest {
+  width: 300px;
+  right: -300px;
+  bottom: -550px;
+  transition: all 1s;
+  height: 550px;
+  position: absolute;
+  background-color: #666;
+  z-index: 999999; }
+  /* line 477, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  .random-guest.appeared {
+    right: 0;
+    bottom: 0; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -124,4 +124,19 @@ $(document).ready(function () {
   setTimeout(function () {
     shouter();    
   }, 300);
+  
+//  var randomGuest = function(){
+//    var guetsTimeout = 10000;
+//    setInterval(function(){
+//      $('.random-guest').addClass('appeared');
+//      
+//      guestsTimeout = 5000 + Math.round(Math.random()*10000);
+//      
+//      setTimeout(function(){
+//        $('.random-guest').removeClass('appeared');
+//      }, 4000);
+//    }, guetsTimeout);
+//  };
+//  
+//  randomGuest();
 });

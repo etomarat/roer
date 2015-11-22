@@ -12,9 +12,8 @@ main {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: cyan;
   z-index: 1; }
-  /* line 17, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+  /* line 16, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
   main .popup {
     display: flex;
     justify-content: center;
@@ -25,30 +24,29 @@ main {
     position: absolute;
     left: 0;
     z-index: 100;
-    background: linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #999 78%), linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), #444;
-    background-size: 16px 48px; }
-    /* line 35, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+    background-image: url("../img/bg.png"); }
+    /* line 29, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
     main .popup .popup-message {
       overflow: hidden;
       height: 100%;
       position: relative;
-      background-color: magenta;
       overflow: hidden;
       text-align: center; }
-      /* line 43, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+      /* line 36, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .popup-message h1 {
         color: #fff;
         font-size: 30px;
-        margin: 50px 0 30px 0; }
-      /* line 49, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+        margin: 50px 0 30px 0;
+        font-family: 'Love Ya Like A Sister'; }
+      /* line 43, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .popup-message .short-link {
         font-size: 40px;
         text-align: center; }
-      /* line 54, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+      /* line 48, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .popup-message .players-row {
         height: 100px;
         margin-top: 100px; }
-        /* line 58, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+        /* line 52, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
         main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2 {
           width: 118px;
           height: 150px;
@@ -56,26 +54,27 @@ main {
           opacity: 0.7;
           font-size: 20px;
           position: relative; }
-          /* line 66, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+          /* line 60, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
           main .popup .popup-message .players-row .player-1 .avatar, main .popup .popup-message .players-row .player-2 .avatar {
             width: 118px;
             height: 118px; }
-          /* line 70, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+          /* line 64, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
           main .popup .popup-message .players-row .player-1 span, main .popup .popup-message .players-row .player-2 span {
-            color: #fff; }
-          /* line 74, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+            color: #fff;
+            font-family: 'Love Ya Like A Sister'; }
+          /* line 69, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
           main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged {
             opacity: 1; }
-        /* line 81, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+        /* line 76, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
         main .popup .popup-message .players-row .player-1 .avatar {
           background-image: url("../img/hand_1.png"); }
-        /* line 86, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+        /* line 81, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
         main .popup .popup-message .players-row .player-2 {
           margin-left: 50px; }
-          /* line 89, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+          /* line 84, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
           main .popup .popup-message .players-row .player-2 .avatar {
             background-image: url("../img/hand_2.png"); }
-    /* line 96, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+    /* line 91, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
     main .popup .timer {
       position: absolute;
       height: 100%;
@@ -85,10 +84,10 @@ main {
       background: #000;
       color: #fff;
       font-size: 100px; }
-      /* line 106, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+      /* line 101, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .timer.hidden {
         display: none; }
-      /* line 110, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+      /* line 105, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .timer h1 {
         font-size: 150px; }
 

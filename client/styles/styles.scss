@@ -15,6 +15,13 @@ main {
     height: 100%;
     background-color: cyan;
     z-index: 1;
+  
+    .hud {
+      z-index: 10000;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
     
     .popup {
         display: flex;
@@ -26,7 +33,7 @@ main {
         height: 100%;
         position: absolute;
         left: 0;
-        z-index: 100;
+        z-index: 10001;
         background: 
         linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, 
         linear-gradient(63deg, transparent 74%, #999 78%), 
@@ -202,7 +209,6 @@ main {
             position: absolute;
             bottom: 200px;
             width: 100%;
-            background-color: #000;
             text-align: center;
             
             .ship {
@@ -241,7 +247,17 @@ main {
         .wave {
           width: 100%;
           height: 80px;
-          background-image: url('../img/waves.png')
+          background-image: url('../img/waves.png');
+          position: absolute;
+          background-position: 0;
+          
+          &:nth-child(2n+1) {
+            animation: waveLeft 150s linear infinite;
+          }
+          
+          &:nth-child(2n+2) {
+            animation: waveRight 300s linear infinite;
+          }
         }
     }
 }

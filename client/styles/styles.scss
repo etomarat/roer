@@ -209,14 +209,12 @@ main {
             position: absolute;
             bottom: 200px;
             width: 100%;
-            background-color: #000;
             text-align: center;
             
             .ship {
                 display: inline-block;
                 position: relative;
                 width: 100px;
-                background-color: #fff;
                 img {
                   width: 100%;
                 }
@@ -240,6 +238,15 @@ main {
           height: 80px;
           background-image: url('../img/waves.png');
           position: absolute;
+          background-position: 0;
+          
+          &:nth-child(2n+1) {
+            animation: waveLeft 150s linear infinite;
+          }
+          
+          &:nth-child(2n+2) {
+            animation: waveRight 300s linear infinite;
+          }
         }
     }
 }

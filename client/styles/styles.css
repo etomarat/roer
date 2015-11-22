@@ -36,6 +36,18 @@
   100% {
     transform: rotate(-180deg); } }
 
+@keyframes waveLeft {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 10000px 0px; } }
+
+@keyframes waveRight {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: -10000px 0px; } }
+
 /* line 3, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
 body {
   padding: 0;
@@ -210,18 +222,16 @@ main {
       position: absolute;
       bottom: 200px;
       width: 100%;
-      background-color: #000;
       text-align: center; }
-      /* line 215, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 214, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .ship-zone .ship {
         display: inline-block;
         position: relative;
-        width: 100px;
-        background-color: #fff; }
-        /* line 220, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        width: 100px; }
+        /* line 218, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .ship-zone .ship img {
           width: 100%; }
-    /* line 226, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 224, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 395px;
       height: 397px;
@@ -232,11 +242,18 @@ main {
       background-image: url(../img/helm.png);
       animation: helm 5s linear infinite;
       background-repeat: no-repeat; }
-    /* line 238, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 236, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
     main .screen .wave {
       width: 100%;
       height: 80px;
       background-image: url("../img/waves.png");
-      position: absolute; }
+      position: absolute;
+      background-position: 0; }
+      /* line 243, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      main .screen .wave:nth-child(2n+1) {
+        animation: waveLeft 150s linear infinite; }
+      /* line 247, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      main .screen .wave:nth-child(2n+2) {
+        animation: waveRight 300s linear infinite; }
 
 /*# sourceMappingURL=styles.css.map */

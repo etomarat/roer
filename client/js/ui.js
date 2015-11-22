@@ -1,4 +1,4 @@
-/* global $, document, window, WebSocket, _, setTimeout */
+/* global $,  document, window, WebSocket, _, setTimeout */
 
 window.renderLogged = function(players){
   players.forEach(function(v, i){
@@ -54,6 +54,5 @@ $(document).ready(function () {
       waveIndex = waveIndex - 1;
     }  
   };
-  
   startWavesGenerator();
 });

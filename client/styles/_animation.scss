@@ -67,3 +67,23 @@
         transform: rotate(-180deg);
     }
 }
+
+@keyframes waveLeft {
+  0% {
+    background-position: 0px 0px;
+  }
+  
+  100% {
+    background-position: 10000px 0px;
+  }
+}
+
+@keyframes waveRight {
+  0% {
+    background-position: 0px 0px;
+  }
+  
+  100% {
+    background-position: -10000px 0px;
+  }
+}

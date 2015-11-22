@@ -101,7 +101,7 @@ main {
     background-position: 0 0;
     animation: coasts 150s linear infinite; }
   /* line 52, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-  main .popup, main .shalom {
+  main .popup, main .shalom, main .bye {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +115,7 @@ main {
     background-size: 16px 48px;
     display: none; }
     /* line 71, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-    main .popup .popup-message, main .popup .shalom-message, main .shalom .popup-message, main .shalom .shalom-message {
+    main .popup .popup-message, main .popup .shalom-message, main .popup .bye-message, main .shalom .popup-message, main .shalom .shalom-message, main .shalom .bye-message, main .bye .popup-message, main .bye .shalom-message, main .bye .bye-message {
       overflow: hidden;
       height: 768px;
       width: 1024px;
@@ -123,50 +123,50 @@ main {
       background-color: magenta;
       text-align: center; }
       /* line 79, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .popup-message h1, main .popup .shalom-message h1, main .shalom .popup-message h1, main .shalom .shalom-message h1 {
+      main .popup .popup-message h1, main .popup .shalom-message h1, main .popup .bye-message h1, main .shalom .popup-message h1, main .shalom .shalom-message h1, main .shalom .bye-message h1, main .bye .popup-message h1, main .bye .shalom-message h1, main .bye .bye-message h1 {
         color: #fff;
         font-size: 50px;
         margin: 100px 0 30px 0;
         font-family: 'Finger Paint';
         text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97998px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.5136px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px; }
       /* line 87, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .popup-message .short-link, main .popup .shalom-message .short-link, main .shalom .popup-message .short-link, main .shalom .shalom-message .short-link {
+      main .popup .popup-message .short-link, main .popup .shalom-message .short-link, main .popup .bye-message .short-link, main .shalom .popup-message .short-link, main .shalom .shalom-message .short-link, main .shalom .bye-message .short-link, main .bye .popup-message .short-link, main .bye .shalom-message .short-link, main .bye .bye-message .short-link {
         font-size: 40px;
         text-align: center; }
       /* line 92, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .popup-message .players-row, main .popup .shalom-message .players-row, main .shalom .popup-message .players-row, main .shalom .shalom-message .players-row {
+      main .popup .popup-message .players-row, main .popup .shalom-message .players-row, main .popup .bye-message .players-row, main .shalom .popup-message .players-row, main .shalom .shalom-message .players-row, main .shalom .bye-message .players-row, main .bye .popup-message .players-row, main .bye .shalom-message .players-row, main .bye .bye-message .players-row {
         height: 300px;
         margin-top: 100px; }
         /* line 96, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-        main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2, main .popup .shalom-message .players-row .player-1, main .popup .shalom-message .players-row .player-2, main .shalom .popup-message .players-row .player-1, main .shalom .popup-message .players-row .player-2, main .shalom .shalom-message .players-row .player-1, main .shalom .shalom-message .players-row .player-2 {
+        main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2, main .popup .shalom-message .players-row .player-1, main .popup .shalom-message .players-row .player-2, main .popup .bye-message .players-row .player-1, main .popup .bye-message .players-row .player-2, main .shalom .popup-message .players-row .player-1, main .shalom .popup-message .players-row .player-2, main .shalom .shalom-message .players-row .player-1, main .shalom .shalom-message .players-row .player-2, main .shalom .bye-message .players-row .player-1, main .shalom .bye-message .players-row .player-2, main .bye .popup-message .players-row .player-1, main .bye .popup-message .players-row .player-2, main .bye .shalom-message .players-row .player-1, main .bye .shalom-message .players-row .player-2, main .bye .bye-message .players-row .player-1, main .bye .bye-message .players-row .player-2 {
           width: 300px;
           height: 300px;
           display: inline-block;
           opacity: 0.7; }
           /* line 102, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-          main .popup .popup-message .players-row .player-1 .avatar, main .popup .popup-message .players-row .player-2 .avatar, main .popup .shalom-message .players-row .player-1 .avatar, main .popup .shalom-message .players-row .player-2 .avatar, main .shalom .popup-message .players-row .player-1 .avatar, main .shalom .popup-message .players-row .player-2 .avatar, main .shalom .shalom-message .players-row .player-1 .avatar, main .shalom .shalom-message .players-row .player-2 .avatar {
+          main .popup .popup-message .players-row .player-1 .avatar, main .popup .popup-message .players-row .player-2 .avatar, main .popup .shalom-message .players-row .player-1 .avatar, main .popup .shalom-message .players-row .player-2 .avatar, main .popup .bye-message .players-row .player-1 .avatar, main .popup .bye-message .players-row .player-2 .avatar, main .shalom .popup-message .players-row .player-1 .avatar, main .shalom .popup-message .players-row .player-2 .avatar, main .shalom .shalom-message .players-row .player-1 .avatar, main .shalom .shalom-message .players-row .player-2 .avatar, main .shalom .bye-message .players-row .player-1 .avatar, main .shalom .bye-message .players-row .player-2 .avatar, main .bye .popup-message .players-row .player-1 .avatar, main .bye .popup-message .players-row .player-2 .avatar, main .bye .shalom-message .players-row .player-1 .avatar, main .bye .shalom-message .players-row .player-2 .avatar, main .bye .bye-message .players-row .player-1 .avatar, main .bye .bye-message .players-row .player-2 .avatar {
             width: 300px;
             height: 300px;
             background-size: cover; }
           /* line 107, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-          main .popup .popup-message .players-row .player-1 span, main .popup .popup-message .players-row .player-2 span, main .popup .shalom-message .players-row .player-1 span, main .popup .shalom-message .players-row .player-2 span, main .shalom .popup-message .players-row .player-1 span, main .shalom .popup-message .players-row .player-2 span, main .shalom .shalom-message .players-row .player-1 span, main .shalom .shalom-message .players-row .player-2 span {
+          main .popup .popup-message .players-row .player-1 span, main .popup .popup-message .players-row .player-2 span, main .popup .shalom-message .players-row .player-1 span, main .popup .shalom-message .players-row .player-2 span, main .popup .bye-message .players-row .player-1 span, main .popup .bye-message .players-row .player-2 span, main .shalom .popup-message .players-row .player-1 span, main .shalom .popup-message .players-row .player-2 span, main .shalom .shalom-message .players-row .player-1 span, main .shalom .shalom-message .players-row .player-2 span, main .shalom .bye-message .players-row .player-1 span, main .shalom .bye-message .players-row .player-2 span, main .bye .popup-message .players-row .player-1 span, main .bye .popup-message .players-row .player-2 span, main .bye .shalom-message .players-row .player-1 span, main .bye .shalom-message .players-row .player-2 span, main .bye .bye-message .players-row .player-1 span, main .bye .bye-message .players-row .player-2 span {
             color: #fff;
             font-family: 'Finger Paint';
             font-size: 40px; }
           /* line 113, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-          main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged, main .popup .shalom-message .players-row .player-1.logged, main .popup .shalom-message .players-row .player-2.logged, main .shalom .popup-message .players-row .player-1.logged, main .shalom .popup-message .players-row .player-2.logged, main .shalom .shalom-message .players-row .player-1.logged, main .shalom .shalom-message .players-row .player-2.logged {
+          main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged, main .popup .shalom-message .players-row .player-1.logged, main .popup .shalom-message .players-row .player-2.logged, main .popup .bye-message .players-row .player-1.logged, main .popup .bye-message .players-row .player-2.logged, main .shalom .popup-message .players-row .player-1.logged, main .shalom .popup-message .players-row .player-2.logged, main .shalom .shalom-message .players-row .player-1.logged, main .shalom .shalom-message .players-row .player-2.logged, main .shalom .bye-message .players-row .player-1.logged, main .shalom .bye-message .players-row .player-2.logged, main .bye .popup-message .players-row .player-1.logged, main .bye .popup-message .players-row .player-2.logged, main .bye .shalom-message .players-row .player-1.logged, main .bye .shalom-message .players-row .player-2.logged, main .bye .bye-message .players-row .player-1.logged, main .bye .bye-message .players-row .player-2.logged {
             opacity: 1; }
         /* line 120, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-        main .popup .popup-message .players-row .player-1 .avatar, main .popup .shalom-message .players-row .player-1 .avatar, main .shalom .popup-message .players-row .player-1 .avatar, main .shalom .shalom-message .players-row .player-1 .avatar {
+        main .popup .popup-message .players-row .player-1 .avatar, main .popup .shalom-message .players-row .player-1 .avatar, main .popup .bye-message .players-row .player-1 .avatar, main .shalom .popup-message .players-row .player-1 .avatar, main .shalom .shalom-message .players-row .player-1 .avatar, main .shalom .bye-message .players-row .player-1 .avatar, main .bye .popup-message .players-row .player-1 .avatar, main .bye .shalom-message .players-row .player-1 .avatar, main .bye .bye-message .players-row .player-1 .avatar {
           background-image: url("../img/hand_1.png"); }
         /* line 125, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-        main .popup .popup-message .players-row .player-2, main .popup .shalom-message .players-row .player-2, main .shalom .popup-message .players-row .player-2, main .shalom .shalom-message .players-row .player-2 {
+        main .popup .popup-message .players-row .player-2, main .popup .shalom-message .players-row .player-2, main .popup .bye-message .players-row .player-2, main .shalom .popup-message .players-row .player-2, main .shalom .shalom-message .players-row .player-2, main .shalom .bye-message .players-row .player-2, main .bye .popup-message .players-row .player-2, main .bye .shalom-message .players-row .player-2, main .bye .bye-message .players-row .player-2 {
           margin-left: 50px; }
           /* line 128, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-          main .popup .popup-message .players-row .player-2 .avatar, main .popup .shalom-message .players-row .player-2 .avatar, main .shalom .popup-message .players-row .player-2 .avatar, main .shalom .shalom-message .players-row .player-2 .avatar {
+          main .popup .popup-message .players-row .player-2 .avatar, main .popup .shalom-message .players-row .player-2 .avatar, main .popup .bye-message .players-row .player-2 .avatar, main .shalom .popup-message .players-row .player-2 .avatar, main .shalom .shalom-message .players-row .player-2 .avatar, main .shalom .bye-message .players-row .player-2 .avatar, main .bye .popup-message .players-row .player-2 .avatar, main .bye .shalom-message .players-row .player-2 .avatar, main .bye .bye-message .players-row .player-2 .avatar {
             background-image: url("../img/hand_2.png"); }
     /* line 135, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-    main .popup .timer, main .shalom .timer {
+    main .popup .timer, main .shalom .timer, main .bye .timer {
       position: absolute;
       height: 100%;
       width: 100%;
@@ -177,28 +177,28 @@ main {
       font-size: 100px;
       transition: all 0.5s; }
       /* line 146, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .timer.hidden, main .shalom .timer.hidden {
+      main .popup .timer.hidden, main .shalom .timer.hidden, main .bye .timer.hidden {
         top: 768px; }
       /* line 150, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-      main .popup .timer h1, main .shalom .timer h1 {
+      main .popup .timer h1, main .shalom .timer h1, main .bye .timer h1 {
         font-size: 150px; }
   /* line 160, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-  main .shalom {
+  main .shalom, main .bye {
     z-index: 99999;
     background-color: #666;
     display: block; }
     /* line 166, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-    main .shalom .shalom-title span {
+    main .shalom .shalom-title span, main .shalom .bye-title span, main .bye .shalom-title span, main .bye .bye-title span {
       font-size: 30px;
       white-space: nowrap; }
     /* line 172, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-    main .shalom .logo {
+    main .shalom .logo, main .shalom .logo-last, main .bye .logo, main .bye .logo-last {
       width: 400px;
       height: 350px;
       margin: 30px auto 0;
       background-color: #666; }
     /* line 179, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
-    main .shalom .play {
+    main .shalom .play, main .shalom .replay, main .bye .play, main .bye .replay {
       color: aquamarine;
       font-size: 50px; }
   /* line 185, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */

@@ -49,7 +49,7 @@ main {
         animation: coasts 150s linear infinite;
     }
     
-    .popup, .shalom {
+    .popup, .shalom, .bye {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -68,7 +68,7 @@ main {
         background-size: 16px 48px;
         display: none;
         
-        .popup-message, .shalom-message {
+        .popup-message, .shalom-message, .bye-message {
             overflow: hidden;
             height: 768px;
             width: 1024px;
@@ -157,26 +157,26 @@ main {
         }
     }
   
-    .shalom {
+    .shalom, .bye {
       z-index: 99999;
       background-color: #666;
       display: block;
       
-      .shalom-title {
+      .shalom-title, .bye-title {
         span {
           font-size: 30px;
           white-space: nowrap;
         }
       }
       
-      .logo {
+      .logo, .logo-last {
         width: 400px;
         height: 350px;
         margin: 30px auto 0;
         background-color: #666;
       }
       
-      .play {
+      .play, .replay {
         color: aquamarine;
         font-size: 50px;
       }

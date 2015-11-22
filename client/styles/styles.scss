@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
   background: url(../img/pattern.jpg);
+  
 }
 
 main {
@@ -94,6 +95,7 @@ main {
                 font-size: 48px;
                 margin: 100px 0 30px 0;
                 font-family: 'Love Ya Like A Sister';
+                letter-spacing: 7px;
             }
             
             .link {
@@ -156,12 +158,38 @@ main {
         }
       
         .bye-message {
+          
+          h1 {
+            margin-top: 60px;
+          }
           .score, .score-max {
               font-size: 21px;
+              font-family: 'Love Ya Like A Sister';
+              color: #fff;
+              text-align: center;
             
               span {
                 font-size: 36px;
               }
+<<<<<<< HEAD
+            }
+            .score-max {
+              color: #971010;
+              background-image: url('../img/link-bg.png');
+              margin-top: 30px;
+              background-repeat: no-repeat;
+              background-position: center;
+              padding: 10px 0;
+              background-size: contain;
+            }
+          
+          .logo-last {
+            background-image: url('../img/broken.png');
+            width: 385px;
+            height: 402px;
+            margin: 9px auto 0;
+=======
+>>>>>>> origin/master
           }
         }
         

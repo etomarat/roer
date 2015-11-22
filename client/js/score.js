@@ -11,10 +11,12 @@ var score = {
   isNewHiscore: function () {
     if (score.new > score.hiScore) {
       localStorage.setItem('hiscore', score.new);
+      return true;
     }
+    return false;
   },
   hiScore: function () {
-    return parseInt(localStorage.getItem('hiscore'));
+    return parseInt(localStorage.getItem('hiscore') || 0);
   }
 };
 

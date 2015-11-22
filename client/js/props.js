@@ -37,6 +37,12 @@ props.kill = function (prop) {
   prop.remove();
 };
 
+props.killAll = function () {
+  props.alive.forEach(function(prop){
+    props.kill(prop);
+  });
+};
+
 props.removeDead = function () {
   props.alive.forEach(function(prop){
     var y = prop.offset().top;
@@ -61,7 +67,8 @@ props.collisions = function() {
   props.alive.forEach(function(prop){
     if(window.isCollides($('.ship'), prop)) {
       //alert('умер'); 
-      props.kill(prop);
+      window.gameOver();
+      //props.kill(prop);
       return false;
     }
   });
@@ -71,13 +78,14 @@ window.startProp = function () {
   props.els = $('.props-storage > *');
   props.container = $('.props');
   props.container.duration = parseInt(props.container.find('img').css('transition-duration'))*1000;
-  props.container.timerId = setInterval(function () {
-    //props.collisions();
-    props.spawn();
-    props.move();
-    score.plus();
-    //console.log(props.container.duration);
-  }, props.container.duration);
+  props.props.container.start = function() {
+    return setInterval(function () {
+      props.spawn();
+      props.move();
+      score.plus();
+    }, props.container.duration);
+  };
+  props.container.timerId = props.props.container.start();
   props.collisionsTimerId = setInterval(function () {
     props.collisions();
   }, 100);

@@ -81,6 +81,26 @@ window.moveBoat = function(direction) {
   
 };
 
+window.gameOver = function () {
+  $('.bye .score .final-score').text(score.new);
+  $('.bye .score .score-max').text(score.hiScore());
+  
+  score.isNewHiscore();
+  $('.bye').show();
+  clearInterval(props.container.timerId);
+};
+
+window.replay = function () {
+  $('.ship').css('left', 0);
+  props.container.timerId = props.props.container.start();
+  $('.bye').hide();
+  score.new = 0;
+};
+
+$('.bye .replay').click(function(){
+  window.replay();
+});
+
 window.renderPhoneUrl = function(shortUrl, longUrl){
   $('.popup .short-link').text(shortUrl);
   $('.popup .long-link').text(longUrl);

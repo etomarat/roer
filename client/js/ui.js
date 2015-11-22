@@ -83,7 +83,6 @@ window.renderPhoneUrl = function(shortUrl){
 };
 
 $(document).ready(function () {
-  
   $('.play').on('click', function(e) {
     e.preventDefault();
     $('.shalom').remove();
@@ -107,7 +106,7 @@ $(document).ready(function () {
   var popupWavesCounter = Math.round($('.wavesHolder').height() / 80 * 2);
   var popupWavesGenerator = function () {
     
-    var popupWavePosition = 750;
+    var popupWavePosition = $('main').height() - 80;
     var popupWaveIndex = popupWavesCounter;
     for(var i = 0; i < popupWavesCounter; i++) {
       $('.wavesHolder').append('<div style="top:' + popupWavePosition + 'px; z-index: ' + popupWaveIndex + ';" class="wave"></div>');

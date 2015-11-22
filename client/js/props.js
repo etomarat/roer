@@ -85,7 +85,7 @@ window.startProp = function () {
       score.plus();
     }, props.container.duration);
   };
-  props.container.timerId = props.props.container.start();
+  props.container.timerId = props.container.start();
   props.collisionsTimerId = setInterval(function () {
     props.collisions();
   }, 100);

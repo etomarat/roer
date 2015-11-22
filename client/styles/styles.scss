@@ -30,7 +30,7 @@ main {
         bottom: 0;
         height: 100%;
         width: 103px;
-        z-index: 100; 
+        z-index: 9999;
         background-image: url('../img/coast_left.png');
         background-position: 0 0;
         animation: coasts 150s linear infinite;
@@ -43,7 +43,7 @@ main {
         bottom: 0;
         height: 100%;
         width: 102px;
-        z-index: 100; 
+        z-index: 9999; 
         background-image: url('../img/coast_right.png');
         background-position: 0 0;
         animation: coasts 150s linear infinite;
@@ -290,7 +290,7 @@ main {
 
 .props {
   position: absolute;
-  z-index: 9999;
+  z-index: 9998;
   width: 100%;
   height: 100%;
   top: 0;

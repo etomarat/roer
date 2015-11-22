@@ -9,7 +9,7 @@ var score = {
     score.render();
   },
   isNewHiscore: function () {
-    if (score.new > score.hiScore) {
+    if (score.new > score.hiScore()) {
       localStorage.setItem('hiscore', score.new);
       return true;
     }

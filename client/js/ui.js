@@ -88,6 +88,7 @@ window.gameOver = function () {
   score.isNewHiscore();
   $('.bye').show();
   $('.wavesHolder').show();
+  props.killAll();
   clearInterval(props.container.timerId);
 };
 

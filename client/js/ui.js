@@ -1,5 +1,7 @@
 /* global $,  document, window, WebSocket, _, setTimeout */
 
+var shouter;
+
 window.renderLogged = function(players){
   players.forEach(function(v, i){
     if (v) {
@@ -13,7 +15,7 @@ window.showTimer = function() {
 };
 
 window.hidePopup = function() {
-  $('.popup').hide();
+  $('.popup').remove();
 };
 
 window.timerStep = function() {
@@ -84,7 +86,7 @@ $(document).ready(function () {
   
   $('.play').on('click', function(e) {
     e.preventDefault();
-    $('.shalom').fadeOut();
+    $('.shalom').remove();
     $('.popup').show();
   });
   
@@ -115,21 +117,16 @@ $(document).ready(function () {
   };
   popupWavesGenerator();
   
-  
-  function shouter() {
-    var a=Math.round(Math.random()*9);
-    var play = [
-          'sound/shout1.mp3',
-          'sound/shout2.mp3',
-          'sound/shout3.mp3',
-          'sound/shout4.mp3',
-          'sound/shout5.mp3',
-          'sound/shout6.mp3',
-          'sound/shout7.mp3',
-          'sound/shout8.mp3',
-          'sound/shout9.mp3',
-        ];
-    $('<audio autoplay><source src="'+play[a]+'" type="audio/mpeg"></audio>').prependTo($('body'));
+  for (var i=1; i<9; i++) {
+    console.log(i);
+    $('<audio class="shout"><source src="sound/shout'+i+'.mp3" type="audio/mpeg"></audio>').prependTo($('body'));
   }
+  
+  shouter = function () {
+    var r=Math.round(Math.random()*9);
+    $('.shout')[r].currentTime = 0;
+    $('.shout')[r].play();
+  };
+  
   shouter();
 });

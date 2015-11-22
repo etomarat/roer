@@ -68,7 +68,7 @@ var boatCollisionTimer = setInterval(function(){
 var helmRotation = 0;
 
 window.moveBoat = function(direction) {
-  var velocity = 50;
+  var velocity = 10;
   var offset = (direction === 'left') ? -1 : 1;
   
   var curOffset = parseInt($('.ship').css('left'));

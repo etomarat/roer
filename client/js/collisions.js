@@ -3,7 +3,7 @@
 window.isCollides = (function () {
     function getPositions( elem ) {
         var pos, width, height;
-        pos = $( elem ).position();
+        pos = $( elem ).offset();
         width = $( elem ).width();
         height = $( elem ).height();
         return [ [ pos.left, pos.left + width ], [ pos.top, pos.top + height ] ];

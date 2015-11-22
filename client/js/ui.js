@@ -30,6 +30,7 @@ window.timerStep = function() {
 };
 
 function collision () {
+  clearInterval(boatCollisionTimer);
   alert('Колизия');
 }
 
@@ -44,8 +45,6 @@ window.collisionDetection = function () {
   var shipZone = {};
   shipZone.el = $('.ship-zone');
   shipZone.w = shipZone.el.width();
-  
-  console.log(boat.x, boat.x+boat.w, shipZone.w);
   if (boat.x < 0) {
     collision();
   }
@@ -54,8 +53,14 @@ window.collisionDetection = function () {
   }
 };
 
+var boatCollisionTimer = setInterval(function(){
+  window.collisionDetection();
+}, 300);
+
+var helmRotation = 0;
+
 window.moveBoat = function(direction) {
-  var velocity = 10;
+  var velocity = 50;
   var offset = (direction === 'left') ? -1 : 1;
   
   var curOffset = parseInt($('.ship').css('left'));
@@ -63,14 +68,19 @@ window.moveBoat = function(direction) {
   
   window.collisionDetection();
   
+  helmRotation = helmRotation+(offset*2);
   $('.helm').css({
-    transform: 'rotate(' + 180*offset + 'deg)'
+    transform: 'rotate(' + helmRotation + 'deg)'
   });
   
 };
 
+window.renderPhoneUrl = function(shortUrl){
+  $('.popup .short-link').text(shortUrl);
+};
+
 $(document).ready(function () {
-  //$('.popup').show();
+  $('.popup').show();
   
   var wavesCounter = Math.round($('.screen').height() / 80 * 2);
   var startWavesGenerator = function () {

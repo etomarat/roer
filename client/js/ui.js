@@ -81,14 +81,9 @@ window.renderPhoneUrl = function(shortUrl){
 };
 
 $(document).ready(function () {
-<<<<<<< HEAD
-  $('.play').on('click', function() {
-=======
-  $('.popup').show();
   
   $('.play').on('click', function(e) {
     e.preventDefault();
->>>>>>> origin/master
     $('.shalom').fadeOut();
     $('.popup').show();
   });
@@ -106,6 +101,7 @@ $(document).ready(function () {
   };
   startWavesGenerator();
   
+    
   var popupWavesCounter = Math.round($('.wavesHolder').height() / 80 * 2);
   var popupWavesGenerator = function () {
     

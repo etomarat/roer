@@ -41,7 +41,7 @@ window.moveBoat = function(direction) {
 };
 
 $(document).ready(function () {
-  //$('.popup').show();
+  $('.popup').show();
   
   var wavesCounter = Math.round($('.screen').height() / 80 * 2);
   var startWavesGenerator = function () {

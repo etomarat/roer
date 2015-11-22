@@ -87,7 +87,7 @@ window.moveBoat = function(direction) {
 window.gameOver = function () {
   $('.bye .score .final-score').text(score.new);
   $('.bye .score-max .final-score').text(score.hiScore());
-  
+  shouter();
   score.isNewHiscore();
   $('.bye').show();
   $('.wavesHolder').show();
@@ -97,6 +97,7 @@ window.gameOver = function () {
 };
 
 window.replay = function () {
+  shouter();
   $('.ship').css('left', 0);
   props.container.start();
   $('.bye').hide();
@@ -115,6 +116,7 @@ $(document).ready(function () {
     e.preventDefault();
     $('.shalom').remove();
     $('.popup').show();
+    shouter();
   });
   
   

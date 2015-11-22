@@ -52,7 +52,6 @@ main {
         background-position: 0 0;
         animation: coasts 150s linear infinite;
     }
-  
     .coast-right {
         position: absolute;
         right: 0;
@@ -163,7 +162,8 @@ main {
         .bye-message {
           
           h1 {
-            margin-top: 60px;
+            margin-top: 70px;
+            margin-bottom: 10px;
           }
           .score, .score-max {
               font-size: 21px;
@@ -178,7 +178,7 @@ main {
             .score-max {
               color: #971010;
               background-image: url('../img/link-bg.png');
-              margin-top: 30px;
+              margin-top: 10px;
               background-repeat: no-repeat;
               background-position: center;
               padding: 10px 0;
@@ -190,6 +190,11 @@ main {
             width: 385px;
             height: 402px;
             margin: 9px auto 0;
+            margin: -124px auto 0;
+          }
+          
+          .replay {
+              margin: 40px auto;
           }
         }
         

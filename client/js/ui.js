@@ -1,4 +1,4 @@
-/* global $,  document, window, WebSocket, _, setTimeout */
+/* global $,  document, window, setTimeout, clearInterval, setInterval, score, props */
 
 var shouter;
 
@@ -38,7 +38,8 @@ window.timerStep = function() {
 
 function collision () {
   clearInterval(boatCollisionTimer);
-  alert('Колизия');
+  //alert('Колизия');
+  window.gameOver();
 }
 
 window.collisionDetection = function () {
@@ -85,12 +86,13 @@ window.moveBoat = function(direction) {
 
 window.gameOver = function () {
   $('.bye .score .final-score').text(score.new);
-  $('.bye .score .score-max').text(score.hiScore());
+  $('.bye .score-max .final-score').text(score.hiScore());
   
   score.isNewHiscore();
   $('.bye').show();
   $('.wavesHolder').show();
   props.killAll();
+  clearInterval(randomShakeTimer);
   clearInterval(props.container.timerId);
 };
 
@@ -99,6 +101,7 @@ window.replay = function () {
   props.container.start();
   $('.bye').hide();
   $('.wavesHolder').hide();
+  randomShake();
   score.new = 0;
 };
 
@@ -167,9 +170,11 @@ $(document).ready(function () {
 //  randomGuest();
 });
 
+
+var randomShakeTimer;
 var randomShake = function(){
   var timeout = 10000;
-  setInterval(function(){
+  randomShakeTimer = setInterval(function(){
     $('.screen').addClass('shake shake-slow shake-constant');
 
     timeout = 5000 + Math.round(Math.random()*10000);

@@ -21,7 +21,7 @@ var socketOnMessage = function(e) {
   }
   
   if (playersReady() && message.type === 'connect') {
-    alert('Оба готовы');
+    //alert('Оба готовы');
     window.showTimer();
     window.timerStep();
     gameStart = true;

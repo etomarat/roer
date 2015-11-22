@@ -42,7 +42,7 @@ var socketOnMessageInit = function (e) {
   socket.onmessage = socketOnMessage;
   console.log('http://screenshake.xyz/ Номер комнаты: '+e.data);
   $(document).ready(function () {
-    window.makeShortUrl('http://'+window.location.host+'/phone/#'+e.data, function(url){
+    window.makeShortUrl('http://'+window.location.host+'/roer/phone/#'+e.data, function(url){
       window.renderPhoneUrl(url);
     });
   });

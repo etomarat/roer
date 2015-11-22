@@ -24,6 +24,7 @@ window.timerStep = function() {
       window.timerStep();
     } else {
       window.hidePopup();
+      window.startProp();
     }
     $('.popup .timer .seconds').text('0'+cur_time);
   }, 1000);
@@ -68,7 +69,7 @@ window.moveBoat = function(direction) {
   
   window.collisionDetection();
   
-  helmRotation = helmRotation+(offset*2);
+  helmRotation = helmRotation+(offset*1.4);
   $('.helm').css({
     transform: 'rotate(' + helmRotation + 'deg)'
   });
@@ -80,7 +81,14 @@ window.renderPhoneUrl = function(shortUrl){
 };
 
 $(document).ready(function () {
+<<<<<<< HEAD
   $('.play').on('click', function() {
+=======
+  $('.popup').show();
+  
+  $('.play').on('click', function(e) {
+    e.preventDefault();
+>>>>>>> origin/master
     $('.shalom').fadeOut();
     $('.popup').show();
   });
@@ -94,7 +102,7 @@ $(document).ready(function () {
       $('.screen').append('<div style="top:' + wavePosition + 'px; z-index: ' + waveIndex + ';" class="wave"></div>');
       wavePosition = wavePosition - 40;
       waveIndex = waveIndex - 1;
-    }  
+    }
   };
   startWavesGenerator();
   

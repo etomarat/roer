@@ -19,6 +19,6 @@ $(document).on('ready', function(){
         type: 'connect',
         player: window.playerSide,
       }));
-    }, 300);
+    }, 1000);
   });
 });

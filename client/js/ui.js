@@ -82,16 +82,38 @@ window.renderPhoneUrl = function(shortUrl){
 $(document).ready(function () {
   $('.popup').show();
   
+  $('.play').on('click', function() {
+    $('.shalom').fadeOut();
+    $('.popup').show();
+  });
+  
   var wavesCounter = Math.round($('.screen').height() / 80 * 2);
   var startWavesGenerator = function () {
     
     var wavePosition = 688;
     var waveIndex = wavesCounter;
-    for(i = 0; i < wavesCounter; i++) {
+    for(var i = 0; i < wavesCounter; i++) {
       $('.screen').append('<div style="top:' + wavePosition + 'px; z-index: ' + waveIndex + ';" class="wave"></div>');
       wavePosition = wavePosition - 40;
       waveIndex = waveIndex - 1;
     }  
   };
   startWavesGenerator();
+  
+  function shouter() {
+    var a=Math.round(Math.random()*9);
+    var play = [
+          'sound/shout1.mp3',
+          'sound/shout2.mp3',
+          'sound/shout3.mp3',
+          'sound/shout4.mp3',
+          'sound/shout5.mp3',
+          'sound/shout6.mp3',
+          'sound/shout7.mp3',
+          'sound/shout8.mp3',
+          'sound/shout9.mp3',
+        ];
+    $('<audio autoplay><source src="'+play[a]+'" type="audio/mpeg"></audio>').prependTo($('body'));
+  }
+  shouter();
 });

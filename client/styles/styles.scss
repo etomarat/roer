@@ -22,8 +22,34 @@ main {
       width: 100%;
       height: 100%;
     }
+  
+    .coast-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 103px;
+        z-index: 9999;
+        background-image: url('../img/coast_left.png');
+        background-position: 0 0;
+        animation: coasts 150s linear infinite;
+    }
+  
+    .coast-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 102px;
+        z-index: 9999; 
+        background-image: url('../img/coast_right.png');
+        background-position: 0 0;
+        animation: coasts 150s linear infinite;
+    }
     
-    .popup {
+    .popup, .shalom, .bye {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,7 +68,7 @@ main {
         background-size: 16px 48px;
         display: none;
         
-        .popup-message {
+        .popup-message, .shalom-message, .bye-message {
             overflow: hidden;
             height: 768px;
             width: 1024px;
@@ -115,9 +141,10 @@ main {
             background: #000;
             color: #fff;
             font-size: 100px;
+            transition: all .5s;
             
             &.hidden {
-                display: none;
+                top: 768px;
             }
             
             h1 {
@@ -128,6 +155,31 @@ main {
                 
             }
         }
+    }
+  
+    .shalom, .bye {
+      z-index: 99999;
+      background-color: #666;
+      display: block;
+      
+      .shalom-title, .bye-title {
+        span {
+          font-size: 30px;
+          white-space: nowrap;
+        }
+      }
+      
+      .logo, .logo-last {
+        width: 400px;
+        height: 350px;
+        margin: 30px auto 0;
+        background-color: #666;
+      }
+      
+      .play, .replay {
+        color: aquamarine;
+        font-size: 50px;
+      }
     }
 
     .screen {
@@ -141,9 +193,9 @@ main {
             width: 322px;
             height: 29px;
             position: absolute;
-//            left: 50%;
-//            margin-left: -150px;
-            left: 50px;
+            left: 50%;
+            margin-left: -150px;
+//            left: 50px;
             top: 30px;
             
             .eye {
@@ -251,16 +303,17 @@ main {
         .wave {
           width: 100%;
           height: 80px;
-          background-image: url('../img/waves.png');
           position: absolute;
           background-position: 0;
           
           &:nth-child(2n+1) {
             animation: waveLeft 150s linear infinite;
+            background-image: url('../img/waves_left.png');
           }
           
           &:nth-child(2n+2) {
             animation: waveRight 300s linear infinite;
+            background-image: url('../img/waves_right.png');
           }
         }
     }
@@ -268,7 +321,7 @@ main {
 
 .props {
   position: absolute;
-  z-index: 9999;
+  z-index: 9998;
   width: 100%;
   height: 100%;
   top: 0;

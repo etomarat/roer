@@ -30,6 +30,7 @@ window.timerStep = function() {
 };
 
 function collision () {
+  clearInterval(boatCollisionTimer);
   alert('Колизия');
 }
 
@@ -44,8 +45,6 @@ window.collisionDetection = function () {
   var shipZone = {};
   shipZone.el = $('.ship-zone');
   shipZone.w = shipZone.el.width();
-  
-  console.log(boat.x, boat.x+boat.w, shipZone.w);
   if (boat.x < 0) {
     collision();
   }
@@ -54,8 +53,14 @@ window.collisionDetection = function () {
   }
 };
 
+var boatCollisionTimer = setInterval(function(){
+  window.collisionDetection();
+}, 300);
+
+var helmRotation = 0;
+
 window.moveBoat = function(direction) {
-  var velocity = 10;
+  var velocity = 50;
   var offset = (direction === 'left') ? -1 : 1;
   
   var curOffset = parseInt($('.ship').css('left'));
@@ -63,26 +68,31 @@ window.moveBoat = function(direction) {
   
   window.collisionDetection();
   
+  helmRotation = helmRotation+(offset*2);
   $('.helm').css({
-    transform: 'rotate(' + 180*offset + 'deg)'
+    transform: 'rotate(' + helmRotation + 'deg)'
   });
   
 };
 
+window.renderPhoneUrl = function(shortUrl){
+  $('.popup .short-link').text(shortUrl);
+};
+
 $(document).ready(function () {
+  $('.popup').show();
   
   $('.play').on('click', function() {
     $('.shalom').fadeOut();
     $('.popup').show();
   });
-  //
   
   var wavesCounter = Math.round($('.screen').height() / 80 * 2);
   var startWavesGenerator = function () {
     
     var wavePosition = 688;
     var waveIndex = wavesCounter;
-    for(i = 0; i < wavesCounter; i++) {
+    for(var i = 0; i < wavesCounter; i++) {
       $('.screen').append('<div style="top:' + wavePosition + 'px; z-index: ' + waveIndex + ';" class="wave"></div>');
       wavePosition = wavePosition - 40;
       waveIndex = waveIndex - 1;
@@ -91,18 +101,18 @@ $(document).ready(function () {
   startWavesGenerator();
   
   function shouter() {
-
-  var a=Math.round(Math.random()*9)
-    play = new Array();
-    play[0]='sound/shout1.mp3'
-    play[1]='sound/shout2.mp3'
-    play[2]='sound/shout3.mp3'
-    play[3]='sound/shout4.mp3'
-    play[4]='sound/shout5.mp3'
-    play[5]='sound/shout6.mp3'
-    play[6]='sound/shout7.mp3'
-    play[7]='sound/shout8.mp3'
-    play[8]='sound/shout9.mp3'
+    var a=Math.round(Math.random()*9);
+    var play = [
+          'sound/shout1.mp3',
+          'sound/shout2.mp3',
+          'sound/shout3.mp3',
+          'sound/shout4.mp3',
+          'sound/shout5.mp3',
+          'sound/shout6.mp3',
+          'sound/shout7.mp3',
+          'sound/shout8.mp3',
+          'sound/shout9.mp3',
+        ];
     $('<audio autoplay><source src="'+play[a]+'" type="audio/mpeg"></audio>').prependTo($('body'));
   }
   shouter();

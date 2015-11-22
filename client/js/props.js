@@ -44,7 +44,7 @@ props.removeDead = function () {
 
 props.move = function () {
   props.alive.forEach(function(prop, i){
-    var y = prop.offset().top;
+    var y = parseInt(prop.css('top'));
     prop.css({
       top: y + props.speed
     });
@@ -68,11 +68,14 @@ window.startProp = function () {
   props.container = $('.props');
   props.container.duration = parseInt(props.container.find('img').css('transition-duration'))*1000;
   props.container.timerId = setInterval(function () {
-    props.collisions();
+    //props.collisions();
     props.spawn();
     props.move();
     //console.log(props.container.duration);
   }, props.container.duration);
+  props.collisionsTimerId = setInterval(function () {
+    props.collisions();
+  }, 100);
 };
 
 $(document).ready(function () {

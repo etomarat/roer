@@ -282,8 +282,17 @@ main {
         display: inline-block;
         position: relative;
         width: 100px;
-        background-color: #fff;
         left: 0;
+<<<<<<< HEAD
+        -webkit-transition: all 300ms linear;
+        -moz-transition: all 300ms linear;
+        -o-transition: all 300ms linear;
+        transition: all 300ms linear; }
+        /* line 223, /Users/morad/Projects/roer/client/styles/styles.scss */
+        main .screen .ship-zone .ship img {
+          width: 100%; }
+    /* line 229, /Users/morad/Projects/roer/client/styles/styles.scss */
+=======
         -webkit-transition: all 100ms linear;
         -moz-transition: all 100ms linear;
         -o-transition: all 100ms linear;
@@ -291,7 +300,12 @@ main {
         /* line 279, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
         main .screen .ship-zone .ship img {
           width: 100%; }
+<<<<<<< HEAD
     /* line 285, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+    /* line 282, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+>>>>>>> 960a6390c6fe165b6dcf6bbdaa24447dd3fd1d2d
+>>>>>>> origin/master
     main .screen .helm {
       width: 395px;
       height: 397px;
@@ -305,23 +319,60 @@ main {
       -moz-transition: all 1s linear;
       -ms-transition: all 1s linear;
       -o-transition: all 1s linear;
+<<<<<<< HEAD
+      transition: all 1s linear;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg); }
+    /* line 251, /Users/morad/Projects/roer/client/styles/styles.scss */
+=======
       transition: all 1s linear; }
+<<<<<<< HEAD
     /* line 302, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+    /* line 299, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+>>>>>>> 960a6390c6fe165b6dcf6bbdaa24447dd3fd1d2d
+>>>>>>> origin/master
     main .screen .wave {
       width: 100%;
       height: 80px;
       position: absolute;
       background-position: 0; }
+<<<<<<< HEAD
       /* line 308, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .screen .wave:nth-child(2n+1) {
         animation: waveLeft 150s linear infinite;
         background-image: url("../img/waves_left.png"); }
       /* line 313, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+<<<<<<< HEAD
+      /* line 258, /Users/morad/Projects/roer/client/styles/styles.scss */
+      main .screen .wave:nth-child(2n+1) {
+        animation: waveLeft 150s linear infinite; }
+      /* line 262, /Users/morad/Projects/roer/client/styles/styles.scss */
+=======
+      /* line 305, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      main .screen .wave:nth-child(2n+1) {
+        animation: waveLeft 150s linear infinite;
+        background-image: url("../img/waves_left.png"); }
+      /* line 310, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+>>>>>>> 960a6390c6fe165b6dcf6bbdaa24447dd3fd1d2d
+>>>>>>> origin/master
       main .screen .wave:nth-child(2n+2) {
         animation: waveRight 300s linear infinite;
         background-image: url("../img/waves_right.png"); }
 
+<<<<<<< HEAD
 /* line 321, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+<<<<<<< HEAD
+/* line 269, /Users/morad/Projects/roer/client/styles/styles.scss */
+=======
+/* line 318, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+>>>>>>> 960a6390c6fe165b6dcf6bbdaa24447dd3fd1d2d
+>>>>>>> origin/master
 .props {
   position: absolute;
   z-index: 9998;
@@ -329,7 +380,15 @@ main {
   height: 100%;
   top: 0;
   left: 0; }
+<<<<<<< HEAD
   /* line 328, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+<<<<<<< HEAD
+  /* line 276, /Users/morad/Projects/roer/client/styles/styles.scss */
+=======
+  /* line 325, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+>>>>>>> 960a6390c6fe165b6dcf6bbdaa24447dd3fd1d2d
+>>>>>>> origin/master
   .props img {
     position: absolute;
     -webkit-transition: all 1000ms linear;
@@ -337,7 +396,15 @@ main {
     -o-transition: all 1000ms linear;
     transition: all 1000ms linear; }
 
+<<<<<<< HEAD
 /* line 337, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+<<<<<<< HEAD
+/* line 285, /Users/morad/Projects/roer/client/styles/styles.scss */
+=======
+/* line 334, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+>>>>>>> 960a6390c6fe165b6dcf6bbdaa24447dd3fd1d2d
+>>>>>>> origin/master
 .props-storage {
   position: absolute;
   opacity: 0; }

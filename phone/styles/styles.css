@@ -1,9 +1,71 @@
-/* line 1, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+@keyframes compas {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes crack {
+  0% {
+    width: 25%; }
+  10% {
+    width: 95%; }
+  20% {
+    width: 15%; }
+  30% {
+    width: 40%; }
+  40% {
+    width: 25%; }
+  50% {
+    width: 70%; }
+  60% {
+    width: 45%; }
+  70% {
+    width: 90%; }
+  80% {
+    width: 50%; }
+  90% {
+    width: 25%; }
+  100% {
+    width: 25%; } }
+
+@keyframes helm {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(20deg); }
+  20% {
+    transform: rotate(25deg); }
+  30% {
+    transform: rotate(-30deg); }
+  40% {
+    transform: rotate(-100deg); }
+  50% {
+    transform: rotate(-70deg); }
+  60% {
+    transform: rotate(-30deg); }
+  70% {
+    transform: rotate(-50deg); }
+  80% {
+    transform: rotate(0deg); }
+  90% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes waveLeft {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: -20px 0; }
+  100% {
+    background-position: 0px 0; } }
+
+/* line 3, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
 body {
   padding: 0;
   margin: 0; }
 
-/* line 6, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+/* line 8, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
 main {
   display: flex;
   justify-content: center;
@@ -13,7 +75,7 @@ main {
   width: 100%;
   height: 100%;
   z-index: 1; }
-  /* line 16, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+  /* line 18, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
   main .popup {
     display: flex;
     justify-content: center;
@@ -24,29 +86,31 @@ main {
     position: absolute;
     left: 0;
     z-index: 100;
-    background-image: url("../img/bg.png"); }
-    /* line 29, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+    background-image: url("../img/bg.png");
+    animation: waveLeft 5s linear infinite; }
+    /* line 32, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
     main .popup .popup-message {
       overflow: hidden;
       height: 100%;
       position: relative;
       overflow: hidden;
-      text-align: center; }
-      /* line 36, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+      text-align: center;
+      width: 100%; }
+      /* line 40, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .popup-message h1 {
         color: #fff;
         font-size: 30px;
         margin: 50px 0 30px 0;
         font-family: 'Love Ya Like A Sister'; }
-      /* line 43, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+      /* line 47, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .popup-message .short-link {
         font-size: 40px;
         text-align: center; }
-      /* line 48, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+      /* line 52, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .popup-message .players-row {
         height: 100px;
         margin-top: 100px; }
-        /* line 52, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+        /* line 56, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
         main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2 {
           width: 118px;
           height: 150px;
@@ -54,27 +118,27 @@ main {
           opacity: 0.7;
           font-size: 20px;
           position: relative; }
-          /* line 60, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+          /* line 64, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
           main .popup .popup-message .players-row .player-1 .avatar, main .popup .popup-message .players-row .player-2 .avatar {
             width: 118px;
             height: 118px; }
-          /* line 64, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+          /* line 68, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
           main .popup .popup-message .players-row .player-1 span, main .popup .popup-message .players-row .player-2 span {
             color: #fff;
             font-family: 'Love Ya Like A Sister'; }
-          /* line 69, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+          /* line 73, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
           main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged {
             opacity: 1; }
-        /* line 76, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+        /* line 80, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
         main .popup .popup-message .players-row .player-1 .avatar {
           background-image: url("../img/hand_1.png"); }
-        /* line 81, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+        /* line 85, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
         main .popup .popup-message .players-row .player-2 {
           margin-left: 50px; }
-          /* line 84, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+          /* line 88, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
           main .popup .popup-message .players-row .player-2 .avatar {
             background-image: url("../img/hand_2.png"); }
-    /* line 91, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+    /* line 95, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
     main .popup .timer {
       position: absolute;
       height: 100%;
@@ -84,11 +148,24 @@ main {
       background: #000;
       color: #fff;
       font-size: 100px; }
-      /* line 101, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+      /* line 105, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .timer.hidden {
         display: none; }
-      /* line 105, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+      /* line 109, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
       main .popup .timer h1 {
         font-size: 150px; }
+
+/* line 120, /Users/admin/Web/h4(k470n 2/roer/phone/styles/styles.scss */
+.helm {
+  width: 300px;
+  height: 302px;
+  position: absolute;
+  bottom: -150px;
+  left: 10px;
+  background-image: url(../img/helm.png);
+  animation: helm 10s linear infinite;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+  background-size: contain; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -36,12 +36,12 @@
   100% {
     transform: rotate(-180deg); } }
 
-/* line 3, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 3, /Users/morad/Projects/roer/client/styles/styles.scss */
 body {
   padding: 0;
   margin: 0; }
 
-/* line 8, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 8, /Users/morad/Projects/roer/client/styles/styles.scss */
 main {
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ main {
   height: 100%;
   background-color: cyan;
   z-index: 1; }
-  /* line 19, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 19, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .popup {
     display: flex;
     justify-content: center;
@@ -66,7 +66,7 @@ main {
     background: linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #999 78%), linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), #444;
     background-size: 16px 48px;
     display: none; }
-    /* line 38, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 38, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .popup-message {
       overflow: hidden;
       height: 768px;
@@ -74,6 +74,7 @@ main {
       position: relative;
       background-color: magenta;
       text-align: center; }
+<<<<<<< HEAD
       /* line 46, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .popup-message h1 {
         color: #fff;
@@ -90,10 +91,27 @@ main {
         height: 300px;
         margin-top: 100px; }
         /* line 63, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+      /* line 47, /Users/morad/Projects/roer/client/styles/styles.scss */
+      main .popup .popup-message h1 {
+        color: #fff;
+        font-size: 50px;
+        margin: 100px 0 30px 0; }
+      /* line 53, /Users/morad/Projects/roer/client/styles/styles.scss */
+      main .popup .popup-message .short-link {
+        font-size: 40px;
+        text-align: center; }
+      /* line 58, /Users/morad/Projects/roer/client/styles/styles.scss */
+      main .popup .popup-message .players-row {
+        height: 300px;
+        margin-top: 100px; }
+        /* line 62, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
         main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2 {
           width: 300px;
           height: 300px;
           display: inline-block;
+<<<<<<< HEAD
           opacity: 0.7; }
           /* line 69, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
           main .popup .popup-message .players-row .player-1 .avatar, main .popup .popup-message .players-row .player-2 .avatar {
@@ -118,6 +136,21 @@ main {
           main .popup .popup-message .players-row .player-2 .avatar {
             background-image: url("../img/hand_2.png"); }
     /* line 102, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+          opacity: 0.7;
+          cursor: pointer; }
+          /* line 69, /Users/morad/Projects/roer/client/styles/styles.scss */
+          main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged {
+            opacity: 1; }
+        /* line 74, /Users/morad/Projects/roer/client/styles/styles.scss */
+        main .popup .popup-message .players-row .player-1 {
+          background-color: cadetblue; }
+        /* line 78, /Users/morad/Projects/roer/client/styles/styles.scss */
+        main .popup .popup-message .players-row .player-2 {
+          margin-left: 50px;
+          background-color: darkcyan; }
+    /* line 85, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
     main .popup .timer {
       position: absolute;
       height: 100%;
@@ -127,6 +160,7 @@ main {
       background: #000;
       color: #fff;
       font-size: 100px; }
+<<<<<<< HEAD
       /* line 112, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
       main .popup .timer.hidden {
         display: none; }
@@ -134,20 +168,37 @@ main {
       main .popup .timer h1 {
         font-size: 150px; }
   /* line 126, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+      /* line 95, /Users/morad/Projects/roer/client/styles/styles.scss */
+      main .popup .timer.hidden {
+        display: none; }
+      /* line 99, /Users/morad/Projects/roer/client/styles/styles.scss */
+      main .popup .timer h1 {
+        font-size: 150px; }
+  /* line 109, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
   main .screen {
     height: 768px;
     width: 1024px;
     position: relative;
     background-color: magenta;
     overflow: hidden; }
+<<<<<<< HEAD
     /* line 133, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+    /* line 116, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
     main .screen .crack-bar {
       width: 322px;
       height: 29px;
       position: absolute;
       left: 50px;
       top: 30px; }
+<<<<<<< HEAD
       /* line 142, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+      /* line 125, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
       main .screen .crack-bar .eye {
         content: '';
         position: absolute;
@@ -159,14 +210,22 @@ main {
         left: -30px;
         box-sizing: border-box;
         z-index: 5; }
+<<<<<<< HEAD
       /* line 155, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+      /* line 138, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
         position: relative;
         border-radius: 15px;
         z-index: 1; }
+<<<<<<< HEAD
         /* line 162, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+        /* line 145, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
         main .screen .crack-bar .status:before {
           content: '';
           width: 100%;
@@ -174,14 +233,22 @@ main {
           background-image: url(../img/progres_frame.png);
           position: absolute;
           z-index: 9; }
+<<<<<<< HEAD
         /* line 171, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+        /* line 154, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
         main .screen .crack-bar .status .persent {
           width: 25%;
           background-image: url(../img/progres.png);
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
+<<<<<<< HEAD
     /* line 181, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+    /* line 164, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
     main .screen .compas {
       position: absolute;
       width: 95px;
@@ -190,7 +257,11 @@ main {
       right: 20px;
       border-radius: 36px;
       background-image: url("../img/compas.png"); }
+<<<<<<< HEAD
       /* line 190, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+      /* line 173, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
       main .screen .compas .arrow {
         width: 34px;
         height: 46px;
@@ -199,22 +270,35 @@ main {
         left: 35px;
         background-image: url("../img/compas_arrow.png");
         animation: compas 1s linear infinite; }
+<<<<<<< HEAD
     /* line 201, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+    /* line 184, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
     main .screen .ship-zone {
       position: absolute;
       bottom: 200px;
       width: 100%;
-      height: 100px;
       background-color: #000;
       text-align: center; }
+<<<<<<< HEAD
       /* line 209, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+      /* line 191, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
       main .screen .ship-zone .ship {
         display: inline-block;
         position: relative;
         width: 100px;
-        height: 100px;
         background-color: #fff; }
+<<<<<<< HEAD
     /* line 218, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+=======
+        /* line 196, /Users/morad/Projects/roer/client/styles/styles.scss */
+        main .screen .ship-zone .ship img {
+          width: 100%; }
+    /* line 202, /Users/morad/Projects/roer/client/styles/styles.scss */
+>>>>>>> origin/master
     main .screen .helm {
       width: 395px;
       height: 397px;

@@ -4,40 +4,26 @@
 var socket;
 
 var socketOnOpen = function() {
-
-  if (window.DeviceMotionEvent) {
-    window.addEventListener("devicemotion", accelerometerUpdate, true);
-  }
-
-  function accelerometerUpdate(e) {
-    var OS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? -1 : 1 );
-    var aGX = e.accelerationIncludingGravity.x*OS;
-    var aGY = e.accelerationIncludingGravity.y*OS;
-    var aGZ = e.accelerationIncludingGravity.z*OS;
-    //The following two lines are just to calculate a
-    // tilt. Not really needed.
-    var xGPosition = Math.atan2(aGY, aGZ);
-    var yGPosition = Math.atan2(aGX, aGZ);
-
-    /*$('body .info').html('\
-      aX:'+aGX+'<br>\
-      aY:'+aGY+'<br>\
-      aZ:'+aGZ+'<br>\
-      xPosition:'+xGPosition+'<br>\
-      yPosition:'+yGPosition+'<br>\
-    ');*/
-
-    var data = {
-      aGX: parseFloat(aGX.toFixed(3)),
-      aGY: parseFloat(aGY.toFixed(3)),
-      player: window.playerSide
-    };
-
-    socket.send(JSON.stringify(data));
-  }
   
-  var iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
-  console.log(iOS, 'iOS');
+  var shakeEvent = new Shake({
+    threshold: 15,
+    timeout: 200
+  });
+  
+  shakeEvent.start();
+  
+  window.addEventListener('shake', function(){
+    sendOneShake();
+  }, false);
+  
+  var sendOneShake = function() {
+    socket.send(JSON.stringify({
+      type: 'shake',
+      player: window.playerSide,
+      shake: 1
+    }));
+  };
+  
 };
 
 var socketOnClose = function(event) {

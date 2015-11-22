@@ -2,7 +2,6 @@
 
 window.renderLogged = function(players){
   players.forEach(function(v, i){
-    console.log(v, i);
     if (v) {
       $('.popup .players-row > *').eq(i).addClass('logged');
     }
@@ -31,11 +30,22 @@ window.timerStep = function() {
   }, 1000);
 };
 
-$(document).ready(function(){
+window.moveBoat = function(direction) {
+  var velocity = 1;
+  var offset = (direction === 'left') ? -1 : 1;
+  
+  var curOffset = parseInt($('.ship').css('left'));
+  
+  console.log(offset, curOffset, ((curOffset-offset)*velocity)+'px');
+  $('.ship').css('left', ((curOffset-offset)*velocity)+'px');
+};
+
+$(document).ready(function () {
+  //$('.popup').show();
   
   var startWavesGenerator = function () {
     $('.screen').append('<div class="wave"></div>');
-  }
+  };
   
   startWavesGenerator();
 });

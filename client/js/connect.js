@@ -25,8 +25,11 @@ var socketOnMessage = function(e) {
     window.timerStep();
   }
   
-    window.renderLogged([left, right]);
+  window.renderLogged([left, right]);
   
+  if (message.type === 'shake') {
+    window.moveBoat(message.player);
+  }
   
   console.log(e.data, JSON.parse(e.data));
 };

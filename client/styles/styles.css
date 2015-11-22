@@ -36,12 +36,12 @@
   100% {
     transform: rotate(-180deg); } }
 
-/* line 3, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 3, /Users/morad/Projects/roer/client/styles/styles.scss */
 body {
   padding: 0;
   margin: 0; }
 
-/* line 8, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+/* line 8, /Users/morad/Projects/roer/client/styles/styles.scss */
 main {
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ main {
   height: 100%;
   background-color: cyan;
   z-index: 1; }
-  /* line 19, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 19, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .popup {
     display: flex;
     justify-content: center;
@@ -66,7 +66,7 @@ main {
     background: linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, #999 78%), linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), #444;
     background-size: 16px 48px;
     display: none; }
-    /* line 38, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 38, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .popup-message {
       overflow: hidden;
       height: 768px;
@@ -75,37 +75,37 @@ main {
       background-color: magenta;
       overflow: hidden;
       text-align: center; }
-      /* line 47, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 47, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .popup-message h1 {
         color: #fff;
         font-size: 50px;
         margin: 100px 0 30px 0; }
-      /* line 53, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 53, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .popup-message .short-link {
         font-size: 40px;
         text-align: center; }
-      /* line 58, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 58, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .popup-message .players-row {
         height: 300px;
         margin-top: 100px; }
-        /* line 62, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 62, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-1, main .popup .popup-message .players-row .player-2 {
           width: 300px;
           height: 300px;
           display: inline-block;
           opacity: 0.7;
           cursor: pointer; }
-          /* line 69, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+          /* line 69, /Users/morad/Projects/roer/client/styles/styles.scss */
           main .popup .popup-message .players-row .player-1.logged, main .popup .popup-message .players-row .player-2.logged {
             opacity: 1; }
-        /* line 74, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 74, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-1 {
           background-color: cadetblue; }
-        /* line 78, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 78, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .popup .popup-message .players-row .player-2 {
           margin-left: 50px;
           background-color: darkcyan; }
-    /* line 85, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 85, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .popup .timer {
       position: absolute;
       height: 100%;
@@ -115,27 +115,27 @@ main {
       background: #000;
       color: #fff;
       font-size: 100px; }
-      /* line 95, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 95, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .timer.hidden {
         display: none; }
-      /* line 99, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 99, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .popup .timer h1 {
         font-size: 150px; }
-  /* line 109, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+  /* line 109, /Users/morad/Projects/roer/client/styles/styles.scss */
   main .screen {
     height: 768px;
     width: 1024px;
     position: relative;
     background-color: magenta;
     overflow: hidden; }
-    /* line 116, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 116, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .crack-bar {
       width: 322px;
       height: 29px;
       position: absolute;
       left: 50px;
       top: 30px; }
-      /* line 125, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 125, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .crack-bar .eye {
         content: '';
         position: absolute;
@@ -147,14 +147,14 @@ main {
         left: -30px;
         box-sizing: border-box;
         z-index: 5; }
-      /* line 138, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 138, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .crack-bar .status {
         width: 100%;
         height: 100%;
         position: relative;
         border-radius: 15px;
         z-index: 1; }
-        /* line 145, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 145, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .screen .crack-bar .status:before {
           content: '';
           width: 100%;
@@ -162,14 +162,14 @@ main {
           background-image: url(../img/progres_frame.png);
           position: absolute;
           z-index: 9; }
-        /* line 154, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 154, /Users/morad/Projects/roer/client/styles/styles.scss */
         main .screen .crack-bar .status .persent {
           width: 25%;
           background-image: url(../img/progres.png);
           height: 100%;
           position: relative;
           animation: crack 10s linear infinite; }
-    /* line 164, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 164, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .compas {
       position: absolute;
       width: 95px;
@@ -178,7 +178,7 @@ main {
       right: 20px;
       border-radius: 36px;
       background-image: url("../img/compas.png"); }
-      /* line 173, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 173, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .compas .arrow {
         width: 34px;
         height: 46px;
@@ -187,22 +187,23 @@ main {
         left: 35px;
         background-image: url("../img/compas_arrow.png");
         animation: compas 1s linear infinite; }
-    /* line 184, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+    /* line 184, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .ship-zone {
       position: absolute;
       bottom: 200px;
       width: 100%;
-      height: 100px;
       background-color: #000;
       text-align: center; }
-      /* line 192, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+      /* line 191, /Users/morad/Projects/roer/client/styles/styles.scss */
       main .screen .ship-zone .ship {
         display: inline-block;
         position: relative;
         width: 100px;
-        height: 100px;
         background-color: #fff; }
-    /* line 201, /Users/admin/Web/h4(k470n 2/roer/client/styles/styles.scss */
+        /* line 196, /Users/morad/Projects/roer/client/styles/styles.scss */
+        main .screen .ship-zone .ship img {
+          width: 100%; }
+    /* line 202, /Users/morad/Projects/roer/client/styles/styles.scss */
     main .screen .helm {
       width: 395px;
       height: 397px;

@@ -2,7 +2,6 @@
 
 window.renderLogged = function(players){
   players.forEach(function(v, i){
-    console.log(v, i);
     if (v) {
       $('.popup .players-row > *').eq(i).addClass('logged');
     }
@@ -29,6 +28,16 @@ window.timerStep = function() {
     }
     $('.popup .timer .seconds').text('0'+cur_time);
   }, 1000);
+};
+
+window.moveBoat = function(direction) {
+  var velocity = 1;
+  var offset = (direction === 'left') ? -1 : 1;
+  
+  var curOffset = parseInt($('.ship').css('left'));
+  
+  console.log(offset, curOffset, ((curOffset-offset)*velocity)+'px');
+  $('.ship').css('left', ((curOffset-offset)*velocity)+'px');
 };
 
 $(document).ready(function(){

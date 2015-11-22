@@ -89,6 +89,24 @@ $(document).ready(function () {
     $('.popup').show();
   });
   
+  $('.wavesHolder').height($(document).height());
+  
+  var waveGenerator = function ($holder) {
+    var wavesCounter = Math.round($holder.height() / 80 * 2)+1;
+    var wavePosition = -40;
+    for(var i = 0; i < wavesCounter; i++) {
+      $('<div class="wave"></div>').appendTo($holder).css({
+        top: wavePosition,
+        'z-index': i,
+      });
+      wavePosition = wavePosition + 40;
+    }
+  };
+  
+  waveGenerator($('.screen'));
+  waveGenerator($('.wavesHolder'));
+  
+  /*
   var wavesCounter = Math.round($('.screen').height() / 80 * 2);
   var startWavesGenerator = function () {
     
@@ -100,10 +118,10 @@ $(document).ready(function () {
       waveIndex = waveIndex - 1;
     }
   };
-  startWavesGenerator();
+  startWavesGenerator();*/
   
     
-  var popupWavesCounter = Math.round($('.wavesHolder').height() / 80 * 2);
+  /*var popupWavesCounter = Math.round($('.wavesHolder').height() / 80 * 2);
   var popupWavesGenerator = function () {
     
     var popupWavePosition = $('main').height() - 80;
@@ -114,7 +132,7 @@ $(document).ready(function () {
       popupWaveIndex = popupWaveIndex - 1;
     }  
   };
-  popupWavesGenerator();
+  popupWavesGenerator();*/
   
   for (var i=1; i<9; i++) {
     console.log(i);
@@ -127,5 +145,7 @@ $(document).ready(function () {
     $('.shout')[r].play();
   };
   
-  shouter();
+  setTimeout(function () {
+    shouter();    
+  }, 300);
 });

@@ -31,7 +31,7 @@ window.timerStep = function() {
       mainTheme.play();    
     }
     $('.popup .timer .seconds').text('0'+cur_time);
-    $('.wavesHolder').remove();
+    $('.wavesHolder').hide();
   }, 1000);
 };
 
@@ -87,6 +87,7 @@ window.gameOver = function () {
   
   score.isNewHiscore();
   $('.bye').show();
+  $('.wavesHolder').show();
   clearInterval(props.container.timerId);
 };
 
@@ -94,6 +95,7 @@ window.replay = function () {
   $('.ship').css('left', 0);
   props.container.timerId = props.props.container.start();
   $('.bye').hide();
+  $('.wavesHolder').hide();
   score.new = 0;
 };
 

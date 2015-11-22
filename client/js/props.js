@@ -78,7 +78,7 @@ window.startProp = function () {
   props.els = $('.props-storage > *');
   props.container = $('.props');
   props.container.duration = parseInt(props.container.find('img').css('transition-duration'))*1000;
-  props.props.container.start = function() {
+  props.container.start = function() {
     return setInterval(function () {
       props.spawn();
       props.move();

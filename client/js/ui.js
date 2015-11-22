@@ -89,4 +89,21 @@ $(document).ready(function () {
     }  
   };
   startWavesGenerator();
+  
+  function shouter() {
+
+  var a=Math.round(Math.random()*9)
+    play = new Array();
+    play[0]='sound/shout1.mp3'
+    play[1]='sound/shout2.mp3'
+    play[2]='sound/shout3.mp3'
+    play[3]='sound/shout4.mp3'
+    play[4]='sound/shout5.mp3'
+    play[5]='sound/shout6.mp3'
+    play[6]='sound/shout7.mp3'
+    play[7]='sound/shout8.mp3'
+    play[8]='sound/shout9.mp3'
+    $('<audio autoplay><source src="'+play[a]+'" type="audio/mpeg"></audio>').prependTo($('body'));
+  }
+  shouter();
 });

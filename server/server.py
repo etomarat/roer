@@ -80,7 +80,7 @@ class Phone(BaseWebSocketHandler):
 
 
 def main():
-    port = 8200
+    port = 8300
     application = tornado.web.Application([
         (r'/left/(?P<key>\d{3})/', Phone),
         (r'/right/(?P<key>\d{3})/', Phone),

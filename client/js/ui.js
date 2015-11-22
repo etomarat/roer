@@ -29,10 +29,10 @@ window.timerStep = function() {
       window.startProp();
       randomShake();
       var mainTheme = $('.main-theme')[0];
-      mainTheme.play();    
+      mainTheme.play();   
+      $('.wavesHolder').hide();
     }
     $('.popup .timer .seconds').text('0'+cur_time);
-    $('.wavesHolder').hide();
   }, 1000);
 };
 

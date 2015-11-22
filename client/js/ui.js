@@ -31,6 +31,7 @@ window.timerStep = function() {
       mainTheme.play();    
     }
     $('.popup .timer .seconds').text('0'+cur_time);
+    $('.wavesHolder').remove();
   }, 1000);
 };
 
@@ -73,15 +74,16 @@ window.moveBoat = function(direction) {
   
   window.collisionDetection();
   
-  helmRotation = helmRotation+(offset*1.4);
+  helmRotation = helmRotation+(offset);
   $('.helm').css({
     transform: 'rotate(' + helmRotation + 'deg)'
   });
   
 };
 
-window.renderPhoneUrl = function(shortUrl){
+window.renderPhoneUrl = function(shortUrl, longUrl){
   $('.popup .short-link').text(shortUrl);
+  $('.popup .long-link').text(longUrl);
 };
 
 $(document).ready(function () {
@@ -107,34 +109,6 @@ $(document).ready(function () {
   
   waveGenerator($('.screen'));
   waveGenerator($('.wavesHolder'));
-  
-  /*
-  var wavesCounter = Math.round($('.screen').height() / 80 * 2);
-  var startWavesGenerator = function () {
-    
-    var wavePosition = 688;
-    var waveIndex = wavesCounter;
-    for(var i = 0; i < wavesCounter; i++) {
-      $('.screen').append('<div style="top:' + wavePosition + 'px; z-index: ' + waveIndex + ';" class="wave"></div>');
-      wavePosition = wavePosition - 40;
-      waveIndex = waveIndex - 1;
-    }
-  };
-  startWavesGenerator();*/
-  
-    
-  /*var popupWavesCounter = Math.round($('.wavesHolder').height() / 80 * 2);
-  var popupWavesGenerator = function () {
-    
-    var popupWavePosition = $('main').height() - 80;
-    var popupWaveIndex = popupWavesCounter;
-    for(var i = 0; i < popupWavesCounter; i++) {
-      $('.wavesHolder').append('<div style="top:' + popupWavePosition + 'px; z-index: ' + popupWaveIndex + ';" class="wave"></div>');
-      popupWavePosition = popupWavePosition - 40;
-      popupWaveIndex = popupWaveIndex - 1;
-    }  
-  };
-  popupWavesGenerator();*/
   
   for (var i=1; i<9; i++) {
     console.log(i);

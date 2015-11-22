@@ -75,6 +75,7 @@ window.startProp = function () {
     //props.collisions();
     props.spawn();
     props.move();
+    score.plus();
     //console.log(props.container.duration);
   }, props.container.duration);
   props.collisionsTimerId = setInterval(function () {

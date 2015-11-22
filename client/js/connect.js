@@ -25,6 +25,7 @@ var socketOnMessage = function(e) {
     window.showTimer();
     window.timerStep();
     gameStart = true;
+    
     $('.ambient').html('');
   }
   
@@ -43,8 +44,9 @@ var socketOnMessageInit = function (e) {
   socket.onmessage = socketOnMessage;
   console.log('http://screenshake.xyz/ Номер комнаты: '+e.data);
   $(document).ready(function () {
-    window.makeShortUrl('http://'+window.location.host+'/roer/phone/#'+e.data, function(url){
-      window.renderPhoneUrl(url);
+    var longUrl = 'http://'+window.location.host+'/roer/phone/#'+e.data;
+    window.makeShortUrl(longUrl, function(url){
+      window.renderPhoneUrl(url, longUrl);
     });
   });
   //alert('http://screenshake.xyz/ Номер комнаты: '+e.data);

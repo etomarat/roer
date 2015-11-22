@@ -3,6 +3,7 @@
 body {
     padding: 0;
     margin: 0;
+  background: url(../img/pattern.jpg);
 }
 
 main {
@@ -416,4 +417,18 @@ main {
 .props-storage {
   position: absolute;
   opacity: 0;
+}
+
+.hud .score {
+  font-family: 'Love Ya Like A Sister';
+  color: white;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 100px;
+  .label {
+    font-size: 16px;
+  }
+  .number {
+    font-size: 28px;
+  }
 }
